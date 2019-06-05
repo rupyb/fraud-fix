@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Navbar from '../shared/Navbar';
 import { withStyles } from '@material-ui/styles';
 import Footer from '../shared/Footer';
+import pricingBackground from '../../assets/illustration/pricingBackground.png';
 
 const styles = {
     content: {
@@ -67,11 +67,12 @@ class About extends Component {
                     style={{
                         display: 'grid',
                         gridTemplateColumns: '15% 70% 15%',
-                        backgroundImage: 'radial-gradient(circle at 67% 52%, #2f2255, #11062f)', color: 'white'
+                        backgroundImage: `url(${pricingBackground})`, color: 'white',
+                        paddingTop: '6em'
                     }}>
                     <div></div>
                     <div>
-                        <Navbar />
+                    
                         <div className={classes.content}>
                             <h2 className={classes.contentH2}>About us</h2>
                             <p className={classes.contentP}>E-commerce fraud prevention is not just our business it's our obsession, that's how we're able

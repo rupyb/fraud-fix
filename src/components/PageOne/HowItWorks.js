@@ -1,13 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import background from '../../assets/illustration/howItWorksBackground.png';
-import magento from '../../assets/illustration/customerLogos/magento.svg';
-import shopify from '../../assets/illustration/customerLogos/shopify.svg';
-import oracle from '../../assets/illustration/customerLogos/oracle.svg';
-import ibm from '../../assets/illustration/customerLogos/ibm.svg';
-import yellowCircle from '../../assets/illustration/customerLogos/chart/yellowCircle.png';
-import greenCircle from '../../assets/illustration/customerLogos/chart/greenCircle.png';
-import purpleCircle from '../../assets/illustration/customerLogos/chart/purpleCircle.png';
+
 
 const useStyles = makeStyles(theme => ({
     theDiv: {
@@ -31,7 +25,6 @@ const useStyles = makeStyles(theme => ({
         color: 'white',
         fontFamily: 'Barlow',
         fontWeight: 600,
-        color: 'white',
         border: 'none',
         borderRadius: '25px'
     },

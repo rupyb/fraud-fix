@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import background from '../../assets/illustration/platforms.png';
 import magento from '../../assets/illustration/customerLogos/magento.svg';
@@ -49,7 +49,6 @@ const useStyles = makeStyles(theme => ({
         color: 'white',
         fontFamily: 'Barlow',
         fontWeight: 600,
-        color: 'white',
         border: 'none',
         borderRadius: '25px'
     },

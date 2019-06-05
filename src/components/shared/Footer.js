@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import footerLogo from '../../assets/illustration/footerLogo.svg';
 import facebook from '../../assets/illustration/social-icons/facebook.svg';
 import twitter from '../../assets/illustration/social-icons/twitter.svg';
@@ -65,9 +65,9 @@ export default () => {
                     <NavLink to="/" ><img src={footerLogo} alt="" className={classes.footerLogo}/></NavLink>
                     <div></div>
                     <div className={classes.gridLogos}>
-                        <a href="https://www.facebook.com"><img src={facebook} alt=""/></a>
-                        <a href="https://www.twitter.com"><img src={twitter} alt=""/></a>
-                        <a href="https://www.instagram.com"><img src={instagram} alt=""/></a>
+                        <a href="https://www.facebook.com/FraudFix-514485039382925/?modal=admin_todo_tour"><img src={facebook} alt=""/></a>
+                        <a href="https://twitter.com/RealFraudFix"><img src={twitter} alt=""/></a>
+                        <a href="https://www.instagram.com/realfraudfix/"><img src={instagram} alt=""/></a>
                         <a href="https://www.linkedin.com"><img src={linkedin} alt=""/></a>
                     </div>
                 </div>

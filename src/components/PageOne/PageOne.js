@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import Navbar from '../shared/Navbar';
+// import Navbar from '../shared/Navbar';
 import WelcomeScreen from './WelcomeScreen';
 import WelcomeFooter from './WelcomeFooter';
 import WhatWeDo from './WhatWeDo';
 import Technology from './Technology';
 import ApiInfo from './ApiInfo';
-import Footer from '../shared/Footer';
 import bg from '../../assets/illustration/bg.png';
 import HowItWorks from './HowItWorks';
 
@@ -25,12 +24,13 @@ export default class PageOne extends Component {
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             height: '100vh', color: 'white',
-            minHeight: '965px'
+            minHeight: '965px',
+            paddingTop: '5em'
           }}>
           <div></div>
           <div>
            
-            <Navbar />
+            {/* <Navbar /> */}
             <WelcomeScreen />
             <WelcomeFooter />
           </div>
@@ -41,7 +41,7 @@ export default class PageOne extends Component {
           <Technology />
           <ApiInfo />
           <HowItWorks />
-          <Footer />
+       
         </div>
       </div>
     );

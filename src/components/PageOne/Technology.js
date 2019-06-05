@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 //import description from '../../assets/illustration/description.svg';
 import technologybackground from '../../assets/illustration/technologybackground.jpg';
@@ -7,7 +7,7 @@ import purple1 from '../../assets/illustration/bullet/purple1new.svg';
 import purple2 from '../../assets/illustration/bullet/purple2.svg';
 import purple3 from '../../assets/illustration/bullet/purple3.svg';
 import purple4 from '../../assets/illustration/bullet/purple4.svg';
-import purple5 from '../../assets/illustration/bullet/purple5.svg';
+
 import green3 from '../../assets/illustration/bullet/green3new.svg';
 
 

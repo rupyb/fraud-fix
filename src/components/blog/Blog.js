@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Navbar from '../shared/Navbar';
 import { withStyles } from '@material-ui/styles';
 import Footer from '../shared/Footer';
 
@@ -7,7 +6,7 @@ const styles = {
     content: {
         textAlign: 'center',
         fontFamily: 'Barlow',
-        justifyItems: 'center',
+        //justifyItems: 'center',
         display: 'grid'
     },
     contentH2: {
@@ -39,11 +38,12 @@ class Blog extends Component {
                     style={{
                         display: 'grid',
                         gridTemplateColumns: '15% 70% 15%',
-                        backgroundImage: 'radial-gradient(circle at 67% 52%, #2f2255, #11062f)', color: 'white'
+                        backgroundImage: 'radial-gradient(circle at 67% 52%, #2f2255, #11062f)', color: 'white',
+                        paddingTop: '6em'
                     }}>
                     <div></div>
                     <div>
-                        <Navbar />
+                     
                         <div className={classes.content}>
                             <h2 className={classes.contentH2}>Blog</h2>
                             <div className={classes.smallLine}></div>

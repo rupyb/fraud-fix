@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import smallGreenCircle from '../../assets/illustration/oval/smallGreenCircle.svg';
 import smallPurpleCircle from '../../assets/illustration/oval/smallPurpleCircle.svg';

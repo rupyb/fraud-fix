@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
-import Button from '../PageOne/ui/Button';
-import SmallLine from '../PageOne/ui/smallLine';
 import { withStyles } from '@material-ui/styles';
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import logo from '../../assets/illustration/landing.png';
 import '../PageOne/button.css';
 
 const styles = {
+    root: {
+        display:'grid',
+        gridTemplateColumns: '15% 70% 15%',
+        position: 'fixed',
+        top: 0,
+        width: '100%'
+    },
     theLink: {
         //backgroundColor: '#ffffff',
         fontFamily: 'Barlow',
@@ -32,7 +37,7 @@ const styles = {
     listStyle: {
         listStyle: 'none',
         color: 'white',
-        
+        outline:'none'
     },
     listGrid: {
         display: 'grid',
@@ -53,45 +58,88 @@ const styles = {
         color: 'white',
         fontFamily: 'Barlow',
         fontWeight: 500,
-        color: 'white',
         border: 'none',
         borderRadius: '25px',
-        fontFamily: 'Barlow',
         backgroundColor: 'rgba(0,0,0,0) !important',
         outline: 'none !important',
     },
+    navLinkWords: {
+        listStyle: 'none',
+        color: 'white',
+        outline:'none',
+        //paddingBottom: '1em',
+        textDecoration: 'none',
+        // '&:hover': {
+        //     borderBottom: '1.5px solid #3cdc7c',
+        //     borderRadius: '1.8px',
+        //     listStyle: 'none',
+        //     textDecoration: 'none',
+        // },
+        '&:focus': {
+            borderBottom: '1.5px solid #3cdc7c',
+            borderRadius: '1.8px',
+        },
+        '&:active': {
+            borderBottom: '1.5px solid #3cdc7c',
+            borderRadius: '1.8px',
+        },
+        // focusVisible: {
+        //     borderBottom: '1.5px solid #3cdc7c',
+        //     borderRadius: '1.8px',
+        // }
+    },
+   dynamicColor: {
+       backgroundImage:'radial-gradient(circle at 67% 52%, #2f2255, #11062f)'
+   }
 };
 
 class Navbar extends Component {
-    state = {}
+    state = {
+        dynamicBackground: false,
+        dynamicClass: this.props.classes.dynamicColor
+    }
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll = () => {
+        console.log('scrolled');
+this.setState({
+    dynamicBackground: true
+})
+    }
+
+    handleClassName = () => {
+        return this.state.dynamicBackground ? this.state.dynamicClass : '';
+    }
     render() {
         const { classes } = this.props;
         return (
+            <div className={classes.root + ' ' + this.handleClassName()}>
+            <div></div>
             <div className={classes.gridNav}>
-
-
                 <ul className={classes.navbarUl}>
-                    <NavLink to="/" className={classes.listStyle + ' ' + classes.paddingUl}>
+                    <Link to="/" className={classes.listStyle + ' ' + classes.paddingUl}>
                         <img src={logo} alt="" className={classes.paddingUl}/>
-                    </NavLink>
+                    </Link>
                 </ul>
                 <nav className={classes.navLinkList + ' ' + classes.listStyle}>
                     <ul className={classes.navLinkListSecond}>
                         <li className={classes.theLink + ' ' + classes.listStyle  + ' ' + classes.listGrid}>
-                            <a className=''>How it works</a>
-                            <SmallLine />
+                            <Link to="/" className={classes.navLinkWords}>How it works</Link>
+                            {/* <SmallLine /> */}
                         </li>
                         <li className={classes.theLink + ' ' + classes.listStyle   + ' ' + classes.listGrid}>
-                            <NavLink to="/about" className={classes.listStyle}>About us</NavLink>
-                            <SmallLine />
+                            <Link to="/about" className={classes.listStyle + ' ' + classes.navLinkWords}>About us</Link>
+                            {/* <SmallLine /> */}
                         </li>
                         <li className={classes.theLink + ' '+ classes.listStyle  + ' ' + classes.listGrid}>
-                        <NavLink to="/pricing" className={classes.listStyle}>Pricing</NavLink>
-                            <SmallLine />
+                        <NavLink to="/pricing" className={classes.listStyle + ' ' + classes.navLinkWords}>Pricing</NavLink>
+                            {/* <SmallLine /> */}
                         </li>
                         <li className={classes.theLink + ' '+ classes.listStyle  + ' ' + classes.listGrid}>
-                        <NavLink to="/blog" className={classes.listStyle}>Blog</NavLink>
-                            <SmallLine />
+                        <NavLink to="/blog" className={classes.listStyle + ' ' + classes.navLinkWords}>Blog</NavLink>
+                            {/* <SmallLine /> */}
                         </li>
                    
                         <li className={classes.listStyle  + ' ' + classes.listGrid}>
@@ -99,6 +147,8 @@ class Navbar extends Component {
                         </li>
                     </ul>
                 </nav>
+            </div>
+            <div></div>
             </div>
         );
     }
