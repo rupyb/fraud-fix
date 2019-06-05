@@ -63,7 +63,7 @@ const useStyles = makeStyles(theme => ({
     },
     grid3: {
         display: 'grid',
-        gridTemplateColumns: '15.5% 23% 23% 23% 15.5%',
+        gridTemplateColumns: '12.5% 25% 25% 25% 12.5%',
     },
     divRow: {
         fontFamily: 'Barlow',
@@ -160,25 +160,24 @@ export default () => {
                             <div className={classes.padding}>
                                 <p className={classes.divRowHeader}>Filter</p>
                                 <p className={classes.divRowP}>
-                                    Lorem ipsum dolor sit, amet
-                            <br /> consectetur adipisicing elit. Autem explicabo
-                           <br /> fuga asperiores minus!
-                        </p>
+                                    You can easily export your data and quickly export the results to Excel. 
+                                    Filter by specific SiteNames, Chargeback Entry Date vs Order Submission Date, 
+                                    Domestic vs International, MOTO (phone orders) vs Internet Orders
+                                </p>
                             </div>
                         </div>
                     </div>
 
                     <div>
                         <div className={classes.divRow}>
-                        <div className={classes.imageSizerPurple}>
+                            <div className={classes.imageSizerPurple}>
                                 <img src={purple1} alt="" className={classes.imageTag} />
                             </div>
                             <div className={classes.padding}>
                                 <p className={classes.divRowHeader}>Site Performance</p>
                                 <p className={classes.divRowP}>
-                                    Lorem ipsum dolor sit, amet
-                            <br /> consectetur adipisicing elit. Autem explicabo
-                           <br /> fuga asperiores minus!
+                                Site Performance: A quick snapshot of a website’s performance including 
+                                Friendly Fraud Chargeback Data, Unique Customers Data, Repeat Customers Data & more
                         </p>
                             </div>
                         </div>
@@ -186,15 +185,13 @@ export default () => {
 
                     <div>
                         <div className={classes.divRow}>
-                        <div className={classes.imageSizerGreen}>
+                            <div className={classes.imageSizerGreen}>
                                 <img src={green3} alt="" className={classes.imageTag} />
                             </div>
                             <div className={classes.padding}>
                                 <p className={classes.divRowHeader}>Statuses</p>
                                 <p className={classes.divRowP}>
-                                    Lorem ipsum dolor sit, amet
-                            <br /> consectetur adipisicing elit. Autem explicabo
-                           <br /> fuga asperiores minus!
+                                Snapshot and graphs of all resolution statuses
                         </p>
                             </div>
                         </div>
@@ -208,15 +205,13 @@ export default () => {
 
                     <div>
                         <div className={classes.divRow}>
-                        <div className={classes.imageSizerPurple}>
+                            <div className={classes.imageSizerPurple}>
                                 <img src={purple1} alt="" className={classes.imageTag} />
                             </div>
                             <div className={classes.padding}>
                                 <p className={classes.divRowHeader}>Totals submitted</p>
                                 <p className={classes.divRowP}>
-                                    Lorem ipsum dolor sit, amet
-                            <br /> consectetur adipisicing elit. Autem explicabo
-                           <br /> fuga asperiores minus!
+                                Total Number Of Orders submitted With its yearly sales comparisons, the information is also a great tool for CFOs and marketing departments.
                         </p>
                             </div>
                         </div>
@@ -224,15 +219,13 @@ export default () => {
 
                     <div>
                         <div className={classes.divRow}>
-                        <div className={classes.imageSizerPurple}>
+                            <div className={classes.imageSizerPurple}>
                                 <img src={purple1} alt="" className={classes.imageTag} />
                             </div>
                             <div className={classes.padding}>
                                 <p className={classes.divRowHeader}>Declined vs Fraud</p>
                                 <p className={classes.divRowP}>
-                                    Lorem ipsum dolor sit, amet
-                            <br /> consectetur adipisicing elit. Autem explicabo
-                           <br /> fuga asperiores minus!
+                                Helps the merchants monitor the decline rate while observing the relative fraud attempts rate
                         </p>
                             </div>
                         </div>

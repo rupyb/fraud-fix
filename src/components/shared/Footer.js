@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import footerLogo from '../../assets/illustration/footerLogo.svg';
+import facebook from '../../assets/illustration/social-icons/facebook.svg';
+import twitter from '../../assets/illustration/social-icons/twitter.svg';
+import instagram from '../../assets/illustration/social-icons/instagram.svg';
+import linkedin from '../../assets/illustration/social-icons/linkedin.svg';
 
 const useStyles = makeStyles(theme => ({
     theDiv: {
@@ -12,7 +16,7 @@ const useStyles = makeStyles(theme => ({
     },
     grid3: {
         display: 'grid',
-        gridTemplateColumns: '35% 40% 25%'
+        gridTemplateColumns: '30% 50% 20%'
     },
     footerP: {
         opacity: 0.75,
@@ -22,12 +26,14 @@ const useStyles = makeStyles(theme => ({
     },
     gridLogos: {
         display: 'grid',
-        gridTemplateColumns: '20% 20% 20% 20% 20%',
+        gridTemplateColumns: '1fr 1fr 1fr 1fr',
         justifyItems: 'end'
     },
     copyright: {
         display: 'grid',
-        gridTemplateColumns: '55% 45%'
+        gridTemplateColumns: '55% 45%',
+        paddingTop: '3em',
+        paddingBottom: '2em'
     },
     copyrightP: {
         opacity: 0.75,
@@ -37,7 +43,8 @@ const useStyles = makeStyles(theme => ({
     copyrightFooter: {
         display: 'grid',
         gridTemplateColumns: 'auto auto auto auto auto auto',
-        justifyItems: 'end'
+        justifyItems: 'end',
+       
     },
     copyrightLink: {
         color: '#11062f'
@@ -58,11 +65,10 @@ export default () => {
                     <NavLink to="/" ><img src={footerLogo} alt="" className={classes.footerLogo}/></NavLink>
                     <div></div>
                     <div className={classes.gridLogos}>
-                        <div>F</div>
-                        <div>G</div>
-                        <div>Bi</div>
-                        <div>Ca</div>
-                        <div>in</div>
+                        <a href="https://www.facebook.com"><img src={facebook} alt=""/></a>
+                        <a href="https://www.twitter.com"><img src={twitter} alt=""/></a>
+                        <a href="https://www.instagram.com"><img src={instagram} alt=""/></a>
+                        <a href="https://www.linkedin.com"><img src={linkedin} alt=""/></a>
                     </div>
                 </div>
 
