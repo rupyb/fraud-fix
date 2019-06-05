@@ -18,7 +18,6 @@ const useStyles = makeStyles(theme => ({
     p: {
         //backgroundColor: '#3cdc7c',
         fontFamily: 'Barlow',
-        fontSize: '1.1em',
         fontWeight: 500,
         lineHeight: 1.52,
         color: '#3cdc7c'

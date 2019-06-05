@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
         gridTemplateColumns: '15% 70% 15%',
         paddingTop: '6em',
         justifyItems: 'center',
-        paddingBottom: '6em',
+        paddingBottom: '115px',
         backgroundImage: `url(${Group2})`
     },
     centerDiv: {
@@ -27,12 +27,12 @@ const useStyles = makeStyles(theme => ({
     },
     p: {
         fontFamily: 'Barlow',
-        fontSize: '3.1em',
-        fontWeight: 600,
+        fontSize: '54px',
+        //fontWeight: 600,
         lineHeight: 0.93,
         letterSpacing: '-0.1px',
         color: '#11062f',
-        paddingBottom:'15px'
+        paddingBottom: '15px'
     },
     smallLine: {
         height: '3.5px',
@@ -45,15 +45,18 @@ const useStyles = makeStyles(theme => ({
     },
     divTwoColumns: {
         display: 'grid',
-        gridTemplateColumns: '50% 50%',
-        paddingTop: '5em'
+        gridTemplateColumns: '10% 40% 40% 10%',
+        paddingTop: '5em',
+        justifyItems: 'center'
     },
     chargeBack: {
         fontFamily: 'Barlow',
         lineHeight: 1.11,
         color: '#11062f',
-        fontWeight: 600,
-        fontSize: '2em'
+        //fontWeight: 600,
+        fontSize: '36px',
+        paddingTop: '25px',
+        paddingBottom: '25px'
     },
     chargeBackP: {
         fontFamily: 'Barlow',
@@ -64,6 +67,9 @@ const useStyles = makeStyles(theme => ({
         width: '15px',
         height: '15px',
         backgroundImage: 'linear-gradient(225deg, #95ebb1, #3cdc7c)'
+    },
+    circleImg: {
+
     }
 }));
 export default () => {
@@ -79,101 +85,107 @@ export default () => {
                     </div>
 
                     <div className={classes.divTwoColumns}>
-                    <img src={padlock} alt=""/>
+                        <div></div>
+                        <img src={padlock} alt="" />
                         <div>
-                            <img src={smallGreenCircle} alt=""/>
+                            <img src={smallGreenCircle} alt="" className={classes.circleImg} />
                             <h3 className={classes.chargeBack}>Chargeback protection</h3>
                             <p className={classes.chargeBackP}>Chargebacks are bleeding your business dry. What if you
-                                 <br />
                                 could predict a future chargeback before
                                 even accepting
-                                 <br />
                                 the order? What if, it was all taken care of behind the
-                                 <br />
                                 scenes. Hang out the open
                                 sign on your business, we'll
-                                 <br />
                                 guard the door.
                              </p>
                         </div>
+                        <div></div>
                     </div>
 
                     <div className={classes.divTwoColumns}>
+                        <div></div>
                         <div>
-                        <img src={smallPurpleCircle} alt=""/>
+                            <img src={smallPurpleCircle} alt="" />
                             <div >
                                 <h3 className={classes.chargeBack}>Highest Approval rates</h3>
                                 <p className={classes.chargeBackP}>
                                     Stop choosing between declining good orders and
-                                <br />
+                                
                                     preventing fraud. FraudFix can help you automate your
-                                <br />
+                            
                                     approvals by as much as 98%, maximize profits without
-                                <br />
+                               
                                     the cost of fraud.
                             </p>
                             </div>
                         </div>
-                        <img src={target} alt=""/>
+                        <img src={target} alt="" />
+                        <div></div>
                     </div>
 
                     <div className={classes.divTwoColumns}>
-                    <img src={fingerprint} alt=""/>
+                    <div></div>
+                        <img src={fingerprint} alt="" />
                         <div>
-                        <img src={smallYellowCircle} alt=""/>
+                            <img src={smallYellowCircle} alt="" />
                             <h3 className={classes.chargeBack}>Fastest approval</h3>
                             <p className={classes.chargeBackP}>
                                 Look, your customers aren't goinng to wait around while their
-                                 <br />
+                     
                                 orders get checked, and your business can't run on a delay,
-                                 <br />
+                           
                                 Don't settle for less than a one second fraud check.
-                                 <br />
+                       
                                 Guaranteed.
                              </p>
                         </div>
+                        <div></div>
                     </div>
 
                     <div className={classes.divTwoColumns}>
+                    <div></div>
                         <div>
-                        <img src={smallGreenCircle} alt=""/>
+                            <img src={smallGreenCircle} alt="" />
                             <div >
                                 <h3 className={classes.chargeBack}>
-                                    All fraud prevention 
-                                    <br/>
+                                    All fraud prevention
+                             
                                     rules are managed by us
                                 </h3>
                                 <p className={classes.chargeBackP}>
                                     Fraud is our obsession, not yours. While some tools make
-                                <br />
+                            
                                     you do the work, we manage all the fraud and customize
-                                <br />
+                          
                                     a solution for your business. Customized solutions without
-                                <br />
+                          
                                     the hassle? Now that's fraud done right.
                             </p>
                             </div>
                         </div>
-                        <img src={desktop} alt=""/>
+                        <img src={desktop} alt="" />
+                        <div></div>
                     </div>
 
                     <div className={classes.divTwoColumns}>
-                    <img src={shield} alt=""/>
+                    <div></div>
+                        <img src={shield} alt="" />
                         <div>
-                        <img src={smallPurpleCircle} alt=""/>
+                            <img src={smallPurpleCircle} alt="" />
                             <h3 className={classes.chargeBack}>
-                            Chargeback
-                            <br/>
-                            Prevention Guarantee
+                                Chargeback
+                           
+                                Prevention Guarantee
                             </h3>
                             <p className={classes.chargeBackP}>
                                 Why should you pay us if we aren't stopping your fraud?
-                                 <br />
+                          
                                 any chargebacks you experience are deducted from our fee
-                                 <br />
+                            
                                 with our optional chargeback guarantee.
                              </p>
                         </div>
+                        <div></div>
                     </div>
 
                 </div>

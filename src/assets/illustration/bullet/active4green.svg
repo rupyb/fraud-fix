@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>bullet / active4green</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="3.5865623%" y2="96.4134377%" id="linearGradient-1">
+            <stop stop-color="#95EBB1" offset="0%"></stop>
+            <stop stop-color="#3CDC7C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="147.369792%" y1="-32.3307292%" x2="3.5865623%" y2="96.4134377%" id="linearGradient-2">
+            <stop stop-color="#95EBB1" offset="0%"></stop>
+            <stop stop-color="#3CDC7C" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-3" cx="27" cy="27" r="15"></circle>
+        <filter x="-263.3%" y="-186.7%" width="626.7%" height="626.7%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="23" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="22.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.584313725   0 0 0 0 0.921568627   0 0 0 0 0.694117647  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="bullet-/-active" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill-opacity="0.3" fill="url(#linearGradient-1)" fill-rule="nonzero" cx="27" cy="27" r="27"></circle>
+        <g id="Oval" fill-rule="nonzero">
+            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+            <use fill="url(#linearGradient-2)" xlink:href="#path-3"></use>
+        </g>
+        <path d="M31.3580728,30.375 L29.6627603,30.375 L29.6627603,33 L28.4205728,33 L28.4205728,30.375 L22.8658853,30.375 L22.8658853,29.2421875 L28.2877603,21.515625 L29.6627603,21.515625 L29.6627603,29.1953125 L31.3580728,29.1953125 L31.3580728,30.375 Z M28.4205728,29.1953125 L28.4205728,25.3984375 C28.4205728,24.6536421 28.4466143,23.8125047 28.4986978,22.875 L28.4361978,22.875 C28.1861966,23.375 27.9518239,23.7890609 27.7330728,24.1171875 L24.1627603,29.1953125 L28.4205728,29.1953125 Z" id="4" fill="#FFFFFF" fill-rule="nonzero"></path>
+    </g>
+</svg>

@@ -14,7 +14,7 @@ class App extends Component {
     // console.log(this.state);
     // console.log(this.props);
     return (
-      <div >
+      <div style={{fontSize: '17px'}}>
         <Navbar />
         <Switch>
           <Route exact path="/" component={PageOne} />

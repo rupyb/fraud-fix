@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
     },
     footerP: {
         opacity: 0.75,
-        fontSize: '1em',
+        // fontSize: '1em',
         lineHeight: 1.76,
         color: '#655c7a'
     },
@@ -37,7 +37,7 @@ const useStyles = makeStyles(theme => ({
     },
     copyrightP: {
         opacity: 0.75,
-        fontSize: '1em',
+        // fontSize: '1em',
         color: '#655c7a'
     },
     copyrightFooter: {

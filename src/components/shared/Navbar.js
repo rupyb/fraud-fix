@@ -6,7 +6,7 @@ import '../PageOne/button.css';
 
 const styles = {
     root: {
-        display:'grid',
+        display: 'grid',
         gridTemplateColumns: '15% 70% 15%',
         position: 'fixed',
         top: 0,
@@ -15,15 +15,14 @@ const styles = {
     theLink: {
         //backgroundColor: '#ffffff',
         fontFamily: 'Barlow',
-        //fontSize: '8.5px',
         fontWeight: 500,
         color: 'white !important'
     },
-    
+
     gridNav: {
         display: 'grid',
         gridTemplateColumns: '45% 55%',
-        paddingTop: '25px'
+        paddingTop: '35px'
     },
     navLinkList: {
         // display: 'grid',
@@ -37,14 +36,14 @@ const styles = {
     listStyle: {
         listStyle: 'none',
         color: 'white',
-        outline:'none'
+        outline: 'none'
     },
     listGrid: {
         display: 'grid',
         justifyContent: 'center',
         alignItems: 'center'
     },
-    navbarUl : {
+    navbarUl: {
         paddingLeft: 0,
         marginBottom: 0,
     },
@@ -66,15 +65,16 @@ const styles = {
     navLinkWords: {
         listStyle: 'none',
         color: 'white',
-        outline:'none',
+        outline: 'none',
         //paddingBottom: '1em',
         textDecoration: 'none',
-        // '&:hover': {
-        //     borderBottom: '1.5px solid #3cdc7c',
-        //     borderRadius: '1.8px',
-        //     listStyle: 'none',
-        //     textDecoration: 'none',
-        // },
+        '&:hover': {
+            borderBottom: '1.5px solid #3cdc7c',
+            borderRadius: '1.8px',
+            listStyle: 'none',
+            textDecoration: 'none',
+            color: 'white'
+        },
         '&:focus': {
             borderBottom: '1.5px solid #3cdc7c',
             borderRadius: '1.8px',
@@ -88,9 +88,9 @@ const styles = {
         //     borderRadius: '1.8px',
         // }
     },
-   dynamicColor: {
-       backgroundImage:'radial-gradient(circle at 67% 52%, #2f2255, #11062f)'
-   }
+    dynamicColor: {
+        backgroundImage: 'radial-gradient(circle at 67% 52%, #2f2255, #11062f)'
+    }
 };
 
 class Navbar extends Component {
@@ -99,15 +99,24 @@ class Navbar extends Component {
         dynamicClass: this.props.classes.dynamicColor
     }
     componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll);
+        //window.addEventListener('scroll', this.handleScroll);
+        window.onscroll = () => {
+            if (window.pageYOffset === 0) {
+                this.setState({
+                    dynamicBackground: false
+                })
+            } else {
+                this.setState({
+                    dynamicBackground: true
+                })
+            }
+        }
     }
 
-    handleScroll = () => {
-        console.log('scrolled');
-this.setState({
-    dynamicBackground: true
-})
-    }
+    componentWillUnmount() {
+        window.onscroll = null;
+      }
+    
 
     handleClassName = () => {
         return this.state.dynamicBackground ? this.state.dynamicClass : '';
@@ -116,39 +125,39 @@ this.setState({
         const { classes } = this.props;
         return (
             <div className={classes.root + ' ' + this.handleClassName()}>
-            <div></div>
-            <div className={classes.gridNav}>
-                <ul className={classes.navbarUl}>
-                    <Link to="/" className={classes.listStyle + ' ' + classes.paddingUl}>
-                        <img src={logo} alt="" className={classes.paddingUl}/>
-                    </Link>
-                </ul>
-                <nav className={classes.navLinkList + ' ' + classes.listStyle}>
-                    <ul className={classes.navLinkListSecond}>
-                        <li className={classes.theLink + ' ' + classes.listStyle  + ' ' + classes.listGrid}>
-                            <Link to="/" className={classes.navLinkWords}>How it works</Link>
-                            {/* <SmallLine /> */}
-                        </li>
-                        <li className={classes.theLink + ' ' + classes.listStyle   + ' ' + classes.listGrid}>
-                            <Link to="/about" className={classes.listStyle + ' ' + classes.navLinkWords}>About us</Link>
-                            {/* <SmallLine /> */}
-                        </li>
-                        <li className={classes.theLink + ' '+ classes.listStyle  + ' ' + classes.listGrid}>
-                        <NavLink to="/pricing" className={classes.listStyle + ' ' + classes.navLinkWords}>Pricing</NavLink>
-                            {/* <SmallLine /> */}
-                        </li>
-                        <li className={classes.theLink + ' '+ classes.listStyle  + ' ' + classes.listGrid}>
-                        <NavLink to="/blog" className={classes.listStyle + ' ' + classes.navLinkWords}>Blog</NavLink>
-                            {/* <SmallLine /> */}
-                        </li>
-                   
-                        <li className={classes.listStyle  + ' ' + classes.listGrid}>
-                        <button className={classes.buttonStyle + ' buttonStyle'}>Contact Us</button>
-                        </li>
+                <div></div>
+                <div className={classes.gridNav}>
+                    <ul className={classes.navbarUl}>
+                        <Link to="/" className={classes.listStyle + ' ' + classes.paddingUl}>
+                            <img src={logo} alt="" className={classes.paddingUl} />
+                        </Link>
                     </ul>
-                </nav>
-            </div>
-            <div></div>
+                    <nav className={classes.navLinkList + ' ' + classes.listStyle}>
+                        <ul className={classes.navLinkListSecond}>
+                            <li className={classes.theLink + ' ' + classes.listStyle + ' ' + classes.listGrid}>
+                                <Link to="/" className={classes.navLinkWords}>How it works</Link>
+                                {/* <SmallLine /> */}
+                            </li>
+                            <li className={classes.theLink + ' ' + classes.listStyle + ' ' + classes.listGrid}>
+                                <Link to="/about" className={classes.listStyle + ' ' + classes.navLinkWords}>About us</Link>
+                                {/* <SmallLine /> */}
+                            </li>
+                            <li className={classes.theLink + ' ' + classes.listStyle + ' ' + classes.listGrid}>
+                                <NavLink to="/pricing" className={classes.listStyle + ' ' + classes.navLinkWords}>Pricing</NavLink>
+                                {/* <SmallLine /> */}
+                            </li>
+                            <li className={classes.theLink + ' ' + classes.listStyle + ' ' + classes.listGrid}>
+                                <NavLink to="/blog" className={classes.listStyle + ' ' + classes.navLinkWords}>Blog</NavLink>
+                                {/* <SmallLine /> */}
+                            </li>
+
+                            <li className={classes.listStyle + ' ' + classes.listGrid}>
+                                <button className={classes.buttonStyle + ' buttonStyle'}>Contact Us</button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div></div>
             </div>
         );
     }

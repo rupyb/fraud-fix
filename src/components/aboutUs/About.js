@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/styles';
-import Footer from '../shared/Footer';
 import pricingBackground from '../../assets/illustration/pricingBackground.png';
+import aboutUsBottomBackground from '../../assets/illustration/aboutUsBottomBackground.png';
 
 const styles = {
     content: {
@@ -12,13 +12,15 @@ const styles = {
         fontWeight: 600,
         lineHeight: 1.19,
         letterSpacing: '-0.1px',
-        fontSize: '3em'
+        fontSize: '3em',
+        paddingBottom: '.5em'
     },
     contentP: {
         lineHeight: 1.6,
         color: '#e1dbf1',
         fontSize: '1.2em',
-        fontWeight: 'normal'
+        fontWeight: 'normal',
+        paddingTop: '2em',
     },
     contentSpan: {
         color: '#ffffff',
@@ -29,6 +31,9 @@ const styles = {
         gridTemplateColumns: '15% 70% 15%',
         backgroundColor: 'white',
         fontFamily: 'Barlow',
+        backgroundImage: `url(${aboutUsBottomBackground})`,
+        paddingTop: '7em',
+        paddingBottom: '7em'
     },
     grid2: {
         display: 'grid',
@@ -48,12 +53,25 @@ const styles = {
         lineHeight: 1.63,
         color: '#655c7a',
         gridGap: '3em'
-      },
+    },
     commentHeader: {
         fontWeight: 500,
         lineHeight: 1.58,
         color: '#11062f'
-    }
+    },
+    line: {
+        height: '3.5px',
+        width: '44px',
+        borderRadius: '10px',
+        backgroundImage: 'linear-gradient(to left, #95ebb1, #3cdc7c)',
+        borderImageSlice: 1,
+        borderBottom: '1px',
+        justifySelf: 'center'
+    },
+    gridLine: {
+        display: 'grid',
+        justifyContent: 'center'
+    },
 };
 
 class About extends Component {
@@ -68,13 +86,17 @@ class About extends Component {
                         display: 'grid',
                         gridTemplateColumns: '15% 70% 15%',
                         backgroundImage: `url(${pricingBackground})`, color: 'white',
-                        paddingTop: '6em'
+                        paddingTop: '10em',
+                        paddingBottom: '6em'
                     }}>
                     <div></div>
                     <div>
-                    
+
                         <div className={classes.content}>
-                            <h2 className={classes.contentH2}>About us</h2>
+                            <div className={classes.gridLine}>
+                                <h2 className={classes.contentH2}>About us</h2>
+                                <div className={classes.line}></div>
+                            </div>
                             <p className={classes.contentP}>E-commerce fraud prevention is not just our business it's our obsession, that's how we're able
                             <br />
                                 to give the highest approval ratings in the industry -
@@ -107,7 +129,6 @@ class About extends Component {
                     <div></div>
                 </div>
 
-                <Footer />
             </div>
         );
     }

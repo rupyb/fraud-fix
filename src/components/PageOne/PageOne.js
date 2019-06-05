@@ -15,7 +15,7 @@ export default class PageOne extends Component {
     // console.log(this.state);
     // console.log(this.props);
     return (
-      <div>
+      <div >
         <div
           style={{
             display: 'grid',
@@ -25,12 +25,11 @@ export default class PageOne extends Component {
             backgroundSize: 'cover',
             height: '100vh', color: 'white',
             minHeight: '965px',
-            paddingTop: '5em'
+            paddingTop: '5em',
+            
           }}>
           <div></div>
           <div>
-           
-            {/* <Navbar /> */}
             <WelcomeScreen />
             <WelcomeFooter />
           </div>

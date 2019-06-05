@@ -12,8 +12,8 @@ const useStyles = makeStyles(theme => ({
     },
     fontSize: {
         fontFamily: 'Barlow',
-        fontSize: '3.5em',
-        fontWeight: 600,
+        fontSize: '60px',
+        //fontWeight: 600,
         lineHeight: 1.07,
         letterSpacing: '-0.1px',
         color: '#ffffff',
@@ -53,7 +53,7 @@ export default () => {
     <div className={classes.gridMaster}>
         <div className="">
             <div className={classes.leftColumn}>
-                <p className={classes.fontSize}>We obsess over fraud <br /> so you can obsess <br />  over your business</p>
+                <p className={classes.fontSize}>We obsess over fraud so you can obsess over your business</p>
                 <input type="text" className={classes.buttonInput + ' ' + classes.common} placeholder="Your e-mail" size="35" />
                 <button className={classes.buttonStyle + ' ' + classes.common}>Contact Us</button>
             </div>

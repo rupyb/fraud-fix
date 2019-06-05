@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>bullet / border4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="3.10963629%" y2="96.8903637%" id="linearGradient-1">
+            <stop stop-color="#9714F4" offset="0%"></stop>
+            <stop stop-color="#6000A4" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="10" cy="10" r="10"></circle>
+        <filter x="-127.5%" y="-102.5%" width="355.0%" height="355.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="8" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.592156863   0 0 0 0 0.0784313725   0 0 0 0 0.956862745  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="bullet-/-border" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1---circle" transform="translate(17.000000, 17.000000)" fill-rule="nonzero">
+            <g id="Oval">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                <circle stroke-opacity="0.15" stroke="#9714F4" stroke-width="8" fill="url(#linearGradient-1)" fill-rule="evenodd" cx="10" cy="10" r="14"></circle>
+            </g>
+            <path d="M12.9961751,12.1953125 L11.8306478,12.1953125 L11.8306478,14 L10.9766438,14 L10.9766438,12.1953125 L7.15779619,12.1953125 L7.15779619,11.4165039 L10.8853353,6.10449219 L11.8306478,6.10449219 L11.8306478,11.3842773 L12.9961751,11.3842773 L12.9961751,12.1953125 Z M10.9766438,11.3842773 L10.9766438,8.77392578 C10.9766438,8.26187895 10.9945473,7.68359697 11.0303548,7.0390625 L10.987386,7.0390625 C10.8155102,7.38281422 10.654379,7.66747934 10.5039876,7.89306641 L8.04939775,11.3842773 L10.9766438,11.3842773 Z" id="4" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

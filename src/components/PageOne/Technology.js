@@ -2,13 +2,16 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 //import description from '../../assets/illustration/description.svg';
 import technologybackground from '../../assets/illustration/technologybackground.jpg';
-import dashboardImage from '../../assets/illustration/dashboardImage.png';
+import dashboardImage from '../../assets/illustration/Group3.png';
 import purple1 from '../../assets/illustration/bullet/purple1new.svg';
-import purple2 from '../../assets/illustration/bullet/purple2.svg';
-import purple3 from '../../assets/illustration/bullet/purple3.svg';
-import purple4 from '../../assets/illustration/bullet/purple4.svg';
-
-import green3 from '../../assets/illustration/bullet/green3new.svg';
+import purple2 from '../../assets/illustration/bullet/border2.svg';
+import purple4 from '../../assets/illustration/bullet/border4.svg';
+import purple5 from '../../assets/illustration/bullet/border5.svg';
+import green1 from '../../assets/illustration/bullet/active1green.svg';
+import green2 from '../../assets/illustration/bullet/active2green.svg';
+import green3 from '../../assets/illustration/bullet/active3green.svg';
+import green4 from '../../assets/illustration/bullet/active4green.svg';
+import green5 from '../../assets/illustration/bullet/active5green.svg';
 
 
 const useStyles = makeStyles(theme => ({
@@ -18,14 +21,14 @@ const useStyles = makeStyles(theme => ({
         backgroundSize: 'contain',
         minHeight: '1715px',
         textAlign: 'center',
-        paddingTop: '6em',
+        paddingTop: '115px',
         display: 'grid',
         gridTemplateColumns: '10% 80% 10%'
     },
     h3: {
         fontFamily: 'Barlow',
-        fontSize: '2.7em',
-        fontWeight: 600,
+        fontSize: '54px',
+       
         lineHeight: 0.93,
         letterSpacing: '-0.1px',
         textAlign: 'center',
@@ -34,7 +37,6 @@ const useStyles = makeStyles(theme => ({
     },
     firstP: {
         fontFamily: 'Barlow',
-        fontSize: '1.1em',
         lineHeight: 1.6,
         textAlign: 'center',
         color: '#e1dbf1',
@@ -74,7 +76,7 @@ const useStyles = makeStyles(theme => ({
     },
     divRowHeader: {
         color: 'white',
-        fontSize: '1.4em',
+        //fontSize: '20px',
         lineHeight: 1.25
     },
     divRowP: {
@@ -94,24 +96,10 @@ const useStyles = makeStyles(theme => ({
         backgroundRepeat: 'no-repeat',
         // backgroundSize: 'contain'
     },
-    purpleBackGround2: {
+    border2: {
         backgroundImage: `url(${purple2})`,
         backgroundRepeat: 'no-repeat',
         // backgroundSize: 'contain'
-    },
-    purpleBackGround4: {
-        backgroundImage: `url(${purple3})`,
-        backgroundRepeat: 'no-repeat',
-        // backgroundSize: 'contain'
-    },
-    purpleBackGround5: {
-        backgroundImage: `url(${purple4})`,
-        backgroundRepeat: 'no-repeat',
-        // backgroundSize: 'contain'
-    },
-    greenBackGround3: {
-        backgroundImage: `url(${green3})`,
-        backgroundRepeat: 'no-repeat',
     },
     padding: {
         paddingTop: '4px',
@@ -155,7 +143,7 @@ export default () => {
                     <div>
                         <div className={classes.divRow}>
                             <div className={classes.imageSizerPurple}>
-                                <img src={purple1} alt="" className={classes.imageTag} />
+                                <img src={green1} alt="" className={classes.imageTag} />
                             </div>
                             <div className={classes.padding}>
                                 <p className={classes.divRowHeader}>Filter</p>
@@ -171,7 +159,7 @@ export default () => {
                     <div>
                         <div className={classes.divRow}>
                             <div className={classes.imageSizerPurple}>
-                                <img src={purple1} alt="" className={classes.imageTag} />
+                                <img src={green2} alt="" className={classes.imageTag} />
                             </div>
                             <div className={classes.padding}>
                                 <p className={classes.divRowHeader}>Site Performance</p>
@@ -206,7 +194,7 @@ export default () => {
                     <div>
                         <div className={classes.divRow}>
                             <div className={classes.imageSizerPurple}>
-                                <img src={purple1} alt="" className={classes.imageTag} />
+                                <img src={purple4} alt="" className={classes.imageTag} />
                             </div>
                             <div className={classes.padding}>
                                 <p className={classes.divRowHeader}>Totals submitted</p>
@@ -220,7 +208,7 @@ export default () => {
                     <div>
                         <div className={classes.divRow}>
                             <div className={classes.imageSizerPurple}>
-                                <img src={purple1} alt="" className={classes.imageTag} />
+                                <img src={purple5} alt="" className={classes.imageTag} />
                             </div>
                             <div className={classes.padding}>
                                 <p className={classes.divRowHeader}>Declined vs Fraud</p>
