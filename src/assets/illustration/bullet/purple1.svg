@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>bullet / border</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="3.10963629%" y2="96.8903637%" id="linearGradient-1">
+            <stop stop-color="#9714F4" offset="0%"></stop>
+            <stop stop-color="#6000A4" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="10" cy="10" r="10"></circle>
+        <filter x="-127.5%" y="-102.5%" width="355.0%" height="355.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="8" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.592156863   0 0 0 0 0.0784313725   0 0 0 0 0.956862745  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="💵-Fraudfix" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-242.000000, -4602.000000)">
+            <g id="technology" transform="translate(0.000000, 3198.000000)">
+                <g id="description" transform="translate(243.000000, 1400.000000)">
+                    <g id="bullet-/-border">
+                        <g id="1---circle" transform="translate(17.000000, 17.000000)">
+                            <g id="Oval" fill-rule="nonzero">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                                <circle stroke-opacity="0.15" stroke="#9714F4" stroke-width="8" fill="url(#linearGradient-1)" fill-rule="evenodd" cx="10" cy="10" r="14"></circle>
+                            </g>
+                            <text id="1" font-family="Helvetica" font-size="11" font-weight="normal" letter-spacing="-0.1432291" fill="#FFFFFF">
+                                <tspan x="7.01277666" y="10">1</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

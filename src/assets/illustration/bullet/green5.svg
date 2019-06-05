@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="114px" height="114px" viewBox="0 0 114 114" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>bullet / border</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="3.5865623%" y2="96.4134377%" id="linearGradient-1">
+            <stop stop-color="#95EBB1" offset="0%"></stop>
+            <stop stop-color="#3CDC7C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="147.369792%" y1="-32.3307292%" x2="3.5865623%" y2="96.4134377%" id="linearGradient-2">
+            <stop stop-color="#95EBB1" offset="0%"></stop>
+            <stop stop-color="#3CDC7C" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-3" cx="27" cy="27" r="15"></circle>
+        <filter x="-263.3%" y="-186.7%" width="626.7%" height="626.7%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="23" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="22.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.584313725   0 0 0 0 0.921568627   0 0 0 0 0.694117647  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="💵-Fraudfix" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-946.000000, -4591.000000)">
+            <g id="technology" transform="translate(0.000000, 3198.000000)">
+                <g id="description" transform="translate(243.000000, 1400.000000)">
+                    <g id="bullet-/-active" transform="translate(733.000000, 0.000000)">
+                        <circle id="Oval" fill-opacity="0.3" fill="url(#linearGradient-1)" fill-rule="nonzero" cx="27" cy="27" r="27"></circle>
+                        <g id="Oval" fill-rule="nonzero">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            <use fill="url(#linearGradient-2)" xlink:href="#path-3"></use>
+                        </g>
+                        <text id="1" font-family="Helvetica" font-size="16" font-weight="normal" letter-spacing="-0.2083332" fill="#FFFFFF">
+                            <tspan x="22.6549478" y="27">5</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

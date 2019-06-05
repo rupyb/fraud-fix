@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>oval / 32px</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="92.1789085%" y1="7.82109148%" x2="6.47874666%" y2="93.5212533%" id="linearGradient-1">
+            <stop stop-color="#F3F6B5" offset="0%"></stop>
+            <stop stop-color="#E6ED4A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="💵-Fraudfix" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-811.000000, -1978.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="what-we-do" transform="translate(-1129.000000, 469.000000)">
+                <g id="oval-/-32px" transform="translate(1940.000000, 1509.000000)">
+                    <circle id="Oval" cx="16" cy="16" r="16"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
