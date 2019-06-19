@@ -7,32 +7,36 @@ import ApiInfo from './ApiInfo';
 import HowItWorks from './HowItWorks';
 
 export default class PageOne extends Component {
+ 
   render() {
     return (
       <div >
-        <div className="pageOneMainDiv"
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '15% 70% 15%',
-            backgroundColor: 'radial-gradient(circle at 67% 52%, #2f2255, #11062f)',
-            backgroundImage: `url('bg.png')`,
-            backgroundSize: 'cover',
-            color: 'white',
-            paddingTop: '5em',
-          }}>
-          <div></div>
-          <div>
-            <WelcomeScreen />
-            <WelcomeFooter />
-          </div>
-          <div></div>
-        </div >
-        <div>
-          <WhatWeDo />
-          <Technology />
-          <ApiInfo />
-          <HowItWorks />
-        </div>
+        
+            <div className="pageOneMainDiv"
+              style={{
+                display: 'grid',
+                gridTemplateColumns: '15% 70% 15%',
+                backgroundColor: '#2f2255',
+               backgroundImage: `url('bg.png')`,
+                backgroundSize: 'cover',
+                color: 'white',
+                paddingTop: '5em',
+              }}>
+              <div></div>
+              <div>
+                <WelcomeScreen />
+                <WelcomeFooter />
+              </div>
+              <div></div>
+            </div >
+            <div>
+              <WhatWeDo />
+              <Technology />
+              <ApiInfo />
+              <HowItWorks />
+            </div>
+        
+        }
       </div>
     );
   }

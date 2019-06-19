@@ -13,7 +13,7 @@ import ReceivedContact from './components/receivedContact/ReceivedContact';
 import BlogItem from './components/blog/BlogItem';
 import axios from 'axios';
 import './components/shared/mediaStyles.css';
-import Login from './components/Login/Login';
+
 
 class App extends Component {
   state = {

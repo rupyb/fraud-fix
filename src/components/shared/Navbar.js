@@ -4,12 +4,8 @@ import { NavLink, Link as RouterLink } from 'react-router-dom';
 import logo from '../../assets/illustration/customerLogos/logo/landing.svg';
 import smallLogo from '../../assets/illustration/logo-landing-mobile.svg';
 import Drawer from '@material-ui/core/Drawer';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
 import './mediaStyles.css';
 import { TiThMenu } from "react-icons/ti";
-import { purple } from '@material-ui/core/colors';
 
 const styles = {
     root: {
@@ -229,7 +225,7 @@ class Navbar extends Component {
                             dynamoColor = classes.visitedLink;
                         }
                         return (
-                            <li className={classes.listClass}>
+                            <li className={classes.listClass} key={item.text}>
                                 <RouterLink className={classes.linkColor + ' linkMobile ' + classes.aLink + ' ' + dynamoColor}
                                     key={item.link}
                                     onClick={() => this.handleClick(item.text)}
