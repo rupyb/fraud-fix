@@ -4,21 +4,32 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.0.1",
+    "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
+    "emailjs-com": "^2.3.2",
     "react": "^16.8.6",
+    "react-dnd": "^7.6.0",
+    "react-dnd-html5-backend": "^7.6.0",
     "react-dom": "^16.8.6",
+    "react-draggable": "^3.3.0",
+    "react-dragula": "^1.1.17",
+    "react-icons": "^3.7.0",
+    "react-responsive-carousel": "^3.1.49",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "striptags": "^3.1.1"
   },
   "engines": {
     "npm": "5.7.1",
     "node": "9.5.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "REACT_APP_EMAILJS_USER_ID='user_9hoIVp7yRnANSOGH3MDxS' REACT_APP_EMAIL_TEMPLATE_ID='form_submission' react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy:prod": "REACT_APP_STAGE=prod REACT_APP_EMAILJS_USER_ID='user_9hoIVp7yRnANSOGH3MDxS' REACT_APP_EMAIL_TEMPLATE_ID='form_submission' react-scripts build && export AWS_PROFILE=fraudfix && aws s3 sync ./build/ s3://fraudfix.com",
+    "deploy:dev": "REACT_APP_STAGE=dev REACT_APP_EMAILJS_USER_ID='user_9hoIVp7yRnANSOGH3MDxS' REACT_APP_EMAIL_TEMPLATE_ID='form_submission' react-scripts build && export AWS_PROFILE=fraudfix && aws s3 sync ./build/ s3://dev.fraudfix.com"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -1,5 +1,5 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import React, { Component } from 'react';
+import { withStyles } from '@material-ui/styles';
 import smallGreenCircle from '../../assets/illustration/oval/smallGreenCircle.svg';
 import smallPurpleCircle from '../../assets/illustration/oval/smallPurpleCircle.svg';
 import smallYellowCircle from '../../assets/illustration/oval/smallYellowCircle.svg';
@@ -11,7 +11,7 @@ import shield from '../../assets/illustration/shield.svg';
 import Group2 from '../../assets/illustration/Group2.png';
 
 
-const useStyles = makeStyles(theme => ({
+const styles = {
     div: {
         display: 'grid',
         gridTemplateColumns: '15% 70% 15%',
@@ -23,12 +23,10 @@ const useStyles = makeStyles(theme => ({
     centerDiv: {
         display: 'grid',
         justifyItems: 'center',
-        //marginBottom: '1em'
     },
     p: {
         fontFamily: 'Barlow',
         fontSize: '54px',
-        //fontWeight: 600,
         lineHeight: 0.93,
         letterSpacing: '-0.1px',
         color: '#11062f',
@@ -41,19 +39,18 @@ const useStyles = makeStyles(theme => ({
         backgroundImage: 'linear-gradient(to left, #95ebb1, #3cdc7c)',
         borderImageSlice: 1,
         borderBottom: '1px'
-
     },
     divTwoColumns: {
         display: 'grid',
-        gridTemplateColumns: '10% 40% 40% 10%',
+        gridTemplateColumns: '1fr 4fr 4fr 1fr',
         paddingTop: '5em',
-        justifyItems: 'center'
+        justifyItems: 'center',
+        gridGap: '10px'
     },
     chargeBack: {
         fontFamily: 'Barlow',
         lineHeight: 1.11,
         color: '#11062f',
-        //fontWeight: 600,
         fontSize: '36px',
         paddingTop: '25px',
         paddingBottom: '25px'
@@ -68,12 +65,54 @@ const useStyles = makeStyles(theme => ({
         height: '15px',
         backgroundImage: 'linear-gradient(225deg, #95ebb1, #3cdc7c)'
     },
-    circleImg: {
-
+    mobileArrayDiv: {
+        display: 'none',
+        textAlign: 'center',
+    },
+    centerImage: {
+        textAlign: 'center',
+        marginTop: '45px'
     }
-}));
-export default () => {
-    const classes = useStyles();
+};
+
+const infoArray = [
+    {
+        text: "Chargebacks are bleeding your business dry. What if you could predict a future chargeback before even accepting the order? What if, it was all taken care of behind the scenes. Hang out the open sign on your business, we'll guard the door.",
+        title: 'Chargeback protection',
+        image: padlock,
+        circle: smallGreenCircle
+    },
+    {
+        text: 'Stop choosing between declining good orders and preventing fraud. FraudFix can help you automate your approvals by as much as 98%, maximize profits without the cost of fraud.',
+        title: 'Highest Approval rates',
+        image: target,
+        circle: smallPurpleCircle
+    },
+    {
+        text: "Look, your customers aren't goinng to wait around while their orders get checked, and your business can't run on a delay, Don't settle for less than a one second fraud check. Guaranteed.",
+        title: 'Fastest approval',
+        image: fingerprint,
+        circle: smallYellowCircle
+    },
+    {
+        text: "Fraud is our obsession, not yours. While some tools make you do the work, we manage all the fraud and customize a solution for your business. Customized solutions without the hassle? Now that's fraud done right.",
+        title: 'All fraud prevention rules are managed by us',
+        image: desktop,
+        circle: smallGreenCircle
+    },
+    {
+        text: "Why should you pay us if we aren't stopping your fraud? any chargebacks you experience are deducted from our fee with our optional chargeback guarantee.",
+        title: 'Chargeback Prevention Guarantee',
+        image: shield,
+        circle: smallPurpleCircle
+    }
+];
+
+
+class WhatWeDo extends Component {
+    
+    render () {
+    const { classes } = this.props;
     return (
         <div>
             <div className={classes.div}>
@@ -83,12 +122,29 @@ export default () => {
                         <p className={classes.p}>What we do</p>
                         <div className={classes.smallLine}></div>
                     </div>
-
-                    <div className={classes.divTwoColumns}>
+                    <div className={classes.mobileArrayDiv + ' mobileArrayDiv'}>
+                        {infoArray.map(item => (
+                            <div key={item.title}>
+                                <div className={classes.centerImage}>
+                                    <img src={item.image} alt=""/>
+                                </div>
+                                <div className={classes.centerImage}>
+                                    <img src={item.circle} alt=""/>
+                                </div>
+                               <h3 className={classes.chargeBack}>{item.title}</h3>
+                                <p className={classes.chargeBackP}>{item.text}</p>
+                            </div>
+                        ))}
+                    </div>
+                    
+                    <div className={classes.divTwoColumns + ' twoColumnDivWhatWeDo'}>
                         <div></div>
-                        <img src={padlock} alt="" />
+                        <div className="theDivForWhatWeDoImage">
+                        <img src={padlock} alt="" className="theImagesWhatWeDo"/>
+                        </div>
+                       
                         <div>
-                            <img src={smallGreenCircle} alt="" className={classes.circleImg} />
+                            <img src={smallGreenCircle} alt="" />
                             <h3 className={classes.chargeBack}>Chargeback protection</h3>
                             <p className={classes.chargeBackP}>Chargebacks are bleeding your business dry. What if you
                                 could predict a future chargeback before
@@ -102,7 +158,7 @@ export default () => {
                         <div></div>
                     </div>
 
-                    <div className={classes.divTwoColumns}>
+                    <div className={classes.divTwoColumns + ' twoColumnDivWhatWeDo'}>
                         <div></div>
                         <div>
                             <img src={smallPurpleCircle} alt="" />
@@ -119,13 +175,13 @@ export default () => {
                             </p>
                             </div>
                         </div>
-                        <img src={target} alt="" />
+                        <img src={target} alt="" className="theImagesWhatWeDo"/>
                         <div></div>
                     </div>
 
-                    <div className={classes.divTwoColumns}>
+                    <div className={classes.divTwoColumns + ' twoColumnDivWhatWeDo'}>
                     <div></div>
-                        <img src={fingerprint} alt="" />
+                        <img src={fingerprint} alt="" className="theImagesWhatWeDo"/>
                         <div>
                             <img src={smallYellowCircle} alt="" />
                             <h3 className={classes.chargeBack}>Fastest approval</h3>
@@ -142,7 +198,7 @@ export default () => {
                         <div></div>
                     </div>
 
-                    <div className={classes.divTwoColumns}>
+                    <div className={classes.divTwoColumns + ' twoColumnDivWhatWeDo'}>
                     <div></div>
                         <div>
                             <img src={smallGreenCircle} alt="" />
@@ -163,13 +219,13 @@ export default () => {
                             </p>
                             </div>
                         </div>
-                        <img src={desktop} alt="" />
+                        <img src={desktop} alt="" className="theImagesWhatWeDo"/>
                         <div></div>
                     </div>
 
-                    <div className={classes.divTwoColumns}>
+                    <div className={classes.divTwoColumns + ' twoColumnDivWhatWeDo'}>
                     <div></div>
-                        <img src={shield} alt="" />
+                        <img src={shield} alt="" className="theImagesWhatWeDo"/>
                         <div>
                             <img src={smallPurpleCircle} alt="" />
                             <h3 className={classes.chargeBack}>
@@ -196,4 +252,6 @@ export default () => {
     );
 
 }
+}
 
+export default withStyles(styles)(WhatWeDo);

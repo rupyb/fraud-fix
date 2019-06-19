@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/styles';
-import { NavLink, Link } from 'react-router-dom'
-import logo from '../../assets/illustration/landing.png';
-import '../PageOne/button.css';
+import { NavLink, Link as RouterLink } from 'react-router-dom';
+import logo from '../../assets/illustration/customerLogos/logo/landing.svg';
+import smallLogo from '../../assets/illustration/logo-landing-mobile.svg';
+import Drawer from '@material-ui/core/Drawer';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import './mediaStyles.css';
+import { TiThMenu } from "react-icons/ti";
+import { purple } from '@material-ui/core/colors';
 
 const styles = {
     root: {
@@ -10,28 +17,24 @@ const styles = {
         gridTemplateColumns: '15% 70% 15%',
         position: 'fixed',
         top: 0,
-        width: '100%'
+        width: '100%',
+        zIndex: 200
     },
     theLink: {
-        //backgroundColor: '#ffffff',
         fontFamily: 'Barlow',
         fontWeight: 500,
         color: 'white !important'
     },
-
     gridNav: {
         display: 'grid',
         gridTemplateColumns: '45% 55%',
         paddingTop: '35px'
     },
-    navLinkList: {
-        // display: 'grid',
-        // gridTemplateColumns: '80% 20%'
-    },
     navLinkListSecond: {
         display: 'grid',
-        gridTemplateColumns: '20% 20% 20% 20% 20%',
-        justifyContent: 'space-evenly'
+        gridTemplateColumns: '0.8fr 1.3fr 1fr 1fr 0.7fr 1.4fr',
+        justifyContent: 'space-evenly',
+        gridGap: '5px'
     },
     listStyle: {
         listStyle: 'none',
@@ -48,7 +51,7 @@ const styles = {
         marginBottom: 0,
     },
     paddingUl: {
-        paddingTop: '8px'
+        paddingTop: '2px'
     },
     buttonStyle: {
         backgroundImage: 'linear-gradient(to bottom, rgba(151, 20, 244, 0.2), rgba(96, 0, 164,0.2))',
@@ -66,8 +69,9 @@ const styles = {
         listStyle: 'none',
         color: 'white',
         outline: 'none',
-        //paddingBottom: '1em',
         textDecoration: 'none',
+        paddingBottom: '15px',
+        paddingTop: '15px',
         '&:hover': {
             borderBottom: '1.5px solid #3cdc7c',
             borderRadius: '1.8px',
@@ -80,26 +84,95 @@ const styles = {
             borderRadius: '1.8px',
         },
         '&:active': {
-            borderBottom: '1.5px solid #3cdc7c',
+
             borderRadius: '1.8px',
         },
-        // focusVisible: {
-        //     borderBottom: '1.5px solid #3cdc7c',
-        //     borderRadius: '1.8px',
-        // }
     },
     dynamicColor: {
-        backgroundImage: 'radial-gradient(circle at 67% 52%, #2f2255, #11062f)'
+        backgroundColor: '#11062f'
+    },
+    mobileLogo: {
+        display: 'none',
+    },
+    mobileDrawer: {
+        display: 'none'
+    },
+    mobileButton: {
+        backgroundColor: 'transparent',
+        color: 'white',
+        height: '42px',
+        width: '42px',
+        border: 0,
+        outline: 'none !important'
+    },
+    paper: {
+        width: '60%',
+        height: '400px',
+        textAlign: 'left',
+        backgroundColor: '#11062f',
+        borderRadius: '25px 0px 0px 25px',
+        color: 'white',
+        paddingTop: '20px'
+    },
+    fullList: {
+        margin: '0 auto',
+        paddingTop: '30px',
+
+    },
+    linkColor: {
+        color: 'white',
+
+        fontWeight: 600,
+        lineHeight: 1.75,
+        letterSpacing: '-0.1px',
+        '&:hover': {
+            textDecoration: 'none !important',
+            listStyle: 'none',
+            color:'#3cdc7c'
+        },
+        '&:visited': {
+            textDecoration: 'none',
+            listStyle: 'none',
+            // color: 'rgba(219, 214, 233, 0.5)'
+        },
+        '&:active': {
+            textDecoration: 'none',
+            listStyle: 'none',
+            //color: 'red'
+        }
+    },
+    activeLinkMobile: {
+        color: '#3cdc7c',
+
+    },
+    visitedLink: {
+        color: 'rgba(219, 214, 233, 0.5)'
+    },
+    icon: {
+        width: '100%'
+    },
+    aLink: {
+        paddingLeft: '16px',
+        '&:hover': {
+            //color: 'green'
+        }
+    },
+    listClass: {
+        textDecoration: 'none',
+        listStyle: 'none',
+        paddingBottom: '20px',
     }
 };
 
 class Navbar extends Component {
     state = {
         dynamicBackground: false,
-        dynamicClass: this.props.classes.dynamicColor
+        dynamicClass: this.props.classes.dynamicColor,
+        openMenu: false,
+        active: '',
+        visitedLink: []
     }
     componentDidMount() {
-        //window.addEventListener('scroll', this.handleScroll);
         window.onscroll = () => {
             if (window.pageYOffset === 0) {
                 this.setState({
@@ -115,46 +188,110 @@ class Navbar extends Component {
 
     componentWillUnmount() {
         window.onscroll = null;
-      }
-    
+    }
 
     handleClassName = () => {
         return this.state.dynamicBackground ? this.state.dynamicClass : '';
     }
+
+    toggleDrawer = (open) => {
+        this.setState({
+            openMenu: open,
+        })
+    }
+
+    fullList = () => {
+        const { classes } = this.props;
+        const menu = [
+            { text: 'Home', link: '/', active: false },
+            { text: 'How it works', link: '/howitworks', active: false },
+            { text: 'About us', link: '/about', active: false },
+            { text: 'Pricing', link: 'pricing', active: false },
+            { text: 'Blog', link: '/blog', active: false },
+            { text: 'Contact us', link: '/contact', active: false }
+        ];
+        return (
+            <div
+                className={classes.fullList}
+                role="presentation"
+                onClick={() => this.toggleDrawer(false)}
+                onKeyDown={() => this.toggleDrawer(false)}>
+                <ul className={classes.linkColor}>
+                    <li className={classes.listClass}>
+                        <a className={classes.linkColor + ' linkMobile ' + classes.aLink}
+                            href="https://cardprober.net/Portal/Account/Login.aspx?ReturnUrl=%2fportal">Login</a>
+                    </li>
+                    {menu.map((item, index) => {
+                        let dynamoColor = 'white';
+                        if (this.state.active === item.text) {
+                            dynamoColor = classes.activeLinkMobile;
+                        } else if (this.state.visitedLink.includes(item.text)) {
+                            dynamoColor = classes.visitedLink;
+                        }
+                        return (
+                            <li className={classes.listClass}>
+                                <RouterLink className={classes.linkColor + ' linkMobile ' + classes.aLink + ' ' + dynamoColor}
+                                    key={item.link}
+                                    onClick={() => this.handleClick(item.text)}
+                                    to={item.link}>{item.text}
+                                </RouterLink>
+                                </li>)
+                    }
+                    )}
+                </ul>
+            </div>
+        )
+    }
+
+    handleClick = (data) => {
+        this.setState({
+            active: window.innerWidth < 723 ? data : '',
+            visitedLink: [...this.state.visitedLink, data]
+        })
+    }
     render() {
         const { classes } = this.props;
         return (
-            <div className={classes.root + ' ' + this.handleClassName()}>
+            <div className={classes.root + ' navroot ' + this.handleClassName()}>
                 <div></div>
-                <div className={classes.gridNav}>
-                    <ul className={classes.navbarUl}>
-                        <Link to="/" className={classes.listStyle + ' ' + classes.paddingUl}>
-                            <img src={logo} alt="" className={classes.paddingUl} />
-                        </Link>
+                <div className={classes.gridNav + ' navbar-grid'}>
+                    <ul className={classes.navbarUl + ' navbarLogo'}>
+                        <RouterLink to="/" className={classes.listStyle + ' ' + classes.paddingUl}>
+                            <img src={logo} alt="" className={classes.paddingUl + ' bigFraudFixLogo'} />
+                            <img src={smallLogo} alt="" className={classes.paddingUl + ' ' + classes.mobileLogo + ' smallFraudFixLogo'} />
+                        </RouterLink>
                     </ul>
-                    <nav className={classes.navLinkList + ' ' + classes.listStyle}>
-                        <ul className={classes.navLinkListSecond}>
+                    <nav className={classes.navLinkList + ' ' + classes.listStyle + ' navbarMenuList'}>
+                        <ul className={classes.navLinkListSecond + ' navbarUl'}>
                             <li className={classes.theLink + ' ' + classes.listStyle + ' ' + classes.listGrid}>
-                                <Link to="/" className={classes.navLinkWords}>How it works</Link>
-                                {/* <SmallLine /> */}
+                                <a href="https://cardprober.net/Portal/Account/Login.aspx?ReturnUrl=%2fportal" className={classes.navLinkWords}>Login</a>
                             </li>
                             <li className={classes.theLink + ' ' + classes.listStyle + ' ' + classes.listGrid}>
-                                <Link to="/about" className={classes.listStyle + ' ' + classes.navLinkWords}>About us</Link>
-                                {/* <SmallLine /> */}
+                                <RouterLink to="/howitworks" className={classes.navLinkWords}>How it works</RouterLink>
+                            </li>
+                            <li className={classes.theLink + ' ' + classes.listStyle + ' ' + classes.listGrid}>
+                                <RouterLink to="/about" className={classes.listStyle + ' ' + classes.navLinkWords}>About us</RouterLink>
                             </li>
                             <li className={classes.theLink + ' ' + classes.listStyle + ' ' + classes.listGrid}>
                                 <NavLink to="/pricing" className={classes.listStyle + ' ' + classes.navLinkWords}>Pricing</NavLink>
-                                {/* <SmallLine /> */}
                             </li>
                             <li className={classes.theLink + ' ' + classes.listStyle + ' ' + classes.listGrid}>
                                 <NavLink to="/blog" className={classes.listStyle + ' ' + classes.navLinkWords}>Blog</NavLink>
-                                {/* <SmallLine /> */}
                             </li>
-
                             <li className={classes.listStyle + ' ' + classes.listGrid}>
-                                <button className={classes.buttonStyle + ' buttonStyle'}>Contact Us</button>
+                                <NavLink to="/contact"><button className={classes.buttonStyle}>Contact Us</button></NavLink>
                             </li>
                         </ul>
+
+                        <div className={classes.mobileDrawer + ' mobileDrawer'}>
+                            <button className={classes.mobileButton}
+                                onClick={() => this.toggleDrawer(true)}><TiThMenu size={30} /></button>
+                            <Drawer
+                                classes={{ paper: classes.paper }} anchor="right"
+                                open={this.state.openMenu} onClose={() => this.toggleDrawer(false)}>
+                                {this.fullList()}
+                            </Drawer>
+                        </div>
                     </nav>
                 </div>
                 <div></div>

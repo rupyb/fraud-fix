@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="78px" height="73px" viewBox="0 0 78 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>pictogram / pictogram 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="3.5865623%" y2="96.4134377%" id="linearGradient-1">
+            <stop stop-color="#95EBB1" offset="0%"></stop>
+            <stop stop-color="#3CDC7C" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="0 59.3477 61.929 59.3477 61.929 -0.0003 0 -0.0003"></polygon>
+    </defs>
+    <g id="💵-Fraudfix" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="How-it-works" transform="translate(-954.000000, -1091.000000)">
+            <g id="how-it-works" transform="translate(-1128.000000, 162.000000)">
+                <g id="4" transform="translate(2004.000000, 815.000000)">
+                    <g id="pictogram-/-pictogram-4" transform="translate(77.000000, 110.000000)">
+                        <g id="icon" transform="translate(1.000000, 4.000000)">
+                            <path d="M78,47.9995536 C78,61.8068496 66.8068496,73 52.9995536,73 C39.1931504,73 28,61.8068496 28,47.9995536 C28,34.1922576 39.1931504,23 53.0004464,23 C66.8077424,23 78,34.1922576 78,47.9995536" id="Fill-1" fill="url(#linearGradient-1)"></path>
+                            <mask id="mask-3" fill="white">
+                                <use xlink:href="#path-2"></use>
+                            </mask>
+                            <g id="Clip-4"></g>
+                            <polygon id="Fill-3" fill="#FFFFFF" mask="url(#mask-3)" points="1 15.9997 16 15.9997 16 0.9997 1 0.9997"></polygon>
+                            <polygon id="Fill-5" fill="#FFFFFF" mask="url(#mask-3)" points="21 15.9997 36 15.9997 36 0.9997 21 0.9997"></polygon>
+                            <polygon id="Fill-6" fill="#FFFFFF" mask="url(#mask-3)" points="41 15.9997 56 15.9997 56 0.9997 41 0.9997"></polygon>
+                            <path d="M54.0498,41.0371 C53.4268,39.4801 54.9858,36.6741 54.0508,34.3361 L49.4318,22.7801 C48.9108,21.4801 47.2788,20.9601 46.1958,21.3931 L43.8858,22.3171 C43.3648,21.0171 41.7338,20.4971 40.6508,20.9311 L38.3388,21.8531 C37.6198,21.3371 36.3548,21.2871 35.2308,21.7571 L33.0908,22.6211 L30.7828,17.2291 C30.2838,15.9481 28.8288,15.3441 27.5478,15.8431 C26.2678,16.3411 25.6458,17.7601 26.1448,19.0401 C26.1448,19.0401 31.3978,31.3101 32.9038,35.0771 C33.0298,35.3931 32.6948,35.6971 32.3898,35.5441 C31.1848,34.9351 28.5088,33.5741 26.7818,33.1751 C25.6848,32.9211 24.4868,33.3451 23.7138,34.1751 C22.6268,35.3431 23.0608,37.2321 24.4918,37.9351 C28.8028,40.0541 31.6348,44.0721 35.7928,45.6551 C37.4938,46.3861 38.7228,46.8101 39.5778,47.6661 C40.0818,48.1701 41.2858,49.8071 42.1928,51.0671 L55.5158,43.8881 C54.9258,42.8441 54.3228,41.7221 54.0498,41.0371" id="Fill-7" fill="#FFFFFF" mask="url(#mask-3)"></path>
+                            <polygon id="Fill-8" fill="#9714F4" mask="url(#mask-3)" points="60.9287 48.7305 43.0697 58.3475 39.8327 52.3365 57.6917 42.7195"></polygon>
+                            <polygon id="Stroke-9" stroke="#11062F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-3)" points="60.9287 48.7305 43.0697 58.3475 39.8327 52.3365 57.6917 42.7195"></polygon>
+                            <path d="M33.0879,22.6143 L35.2309,21.7573 C36.3549,21.2873 37.6199,21.3373 38.3389,21.8543 L40.6499,20.9303 C41.7339,20.4973 43.3649,21.0173 43.8859,22.3173 L46.1959,21.3933 C47.2789,20.9603 48.9109,21.4803 49.4319,22.7803 L54.0509,34.3363 C54.9849,36.6743 53.4269,39.4803 54.0499,41.0373 C54.3229,41.7213 54.9259,42.8433 55.5159,43.8873" id="Stroke-10" stroke="#11062F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-3)"></path>
+                            <path d="M38.3389,21.8545 L40.6499,27.6315" id="Stroke-11" stroke="#11062F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-3)"></path>
+                            <path d="M43.8857,22.3174 L45.7337,26.9394" id="Stroke-12" stroke="#11062F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-3)"></path>
+                            <path d="M36.0273,29.4795 L30.7833,17.2295 C30.2843,15.9485 28.8293,15.3435 27.5483,15.8425 C26.2673,16.3405 25.6453,17.7595 26.1443,19.0405 C26.1443,19.0405 31.3973,31.3095 32.9033,35.0775 C33.0303,35.3935 32.6943,35.6975 32.3893,35.5435 C31.1843,34.9355 28.5083,33.5745 26.7823,33.1745 C25.6843,32.9205 24.4863,33.3445 23.7143,34.1745 C22.6273,35.3425 23.0603,37.2325 24.4923,37.9365 C28.8023,40.0535 31.6343,44.0725 35.7933,45.6555 C37.4943,46.3845 38.7223,46.8115 39.5783,47.6665 C40.0823,48.1705 41.2863,49.8065 42.1923,51.0675" id="Stroke-13" stroke="#11062F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-3)"></path>
+                            <polyline id="Stroke-14" stroke="#11062F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-3)" points="16 8 16 16 1 16 1 1 12.2 1"></polyline>
+                            <polyline id="Stroke-15" stroke="#3CDC7C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-3)" points="4.7334 8.4668 8.4664 12.1998 17.1774 0.9998"></polyline>
+                            <polyline id="Stroke-16" stroke="#11062F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-3)" points="23 16 21 16 21 1 36 1 36 16 34 16"></polyline>
+                            <polygon id="Stroke-17" stroke="#11062F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-3)" points="41 15.9997 56 15.9997 56 0.9997 41 0.9997"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

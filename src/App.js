@@ -6,23 +6,45 @@ import Pricing from './components/pricing/Pricing';
 import Blog from './components/blog/Blog';
 import Navbar from './components/shared/Navbar';
 import Footer from './components/shared/Footer';
+import HowItWorks from './components/HowItWorks/HowItWorks';
+import ScrollToTop from './components/shared/ScrollToTop';
+import ContactUs from './components/ContactUs/ContactUs';
+import ReceivedContact from './components/receivedContact/ReceivedContact';
+import BlogItem from './components/blog/BlogItem';
+import axios from 'axios';
+import './components/shared/mediaStyles.css';
+import Login from './components/Login/Login';
 
 class App extends Component {
-
+  state = {
+    posts: []
+  }
+  componentDidMount() {
+    axios.get('https://api.buttercms.com/v2/posts/?auth_token=64abc35312a04f7560ac44f61cd671ab8704bf00').then(data => {
+      this.setState({
+          posts: data.data.data
+      })
+  });
+  }
 
   render() {
-    // console.log(this.state);
-    // console.log(this.props);
     return (
-      <div style={{fontSize: '17px'}}>
-        <Navbar />
+      <div style={{ fontSize: '17px', fontFamily: 'Barlow', lineHeight: 1, color: '#11062F' }}>
+        <Navbar {...this.props}/>
+        <ScrollToTop />
         <Switch>
           <Route exact path="/" component={PageOne} />
           <Route path="/about" component={About} />
           <Route path="/pricing" component={Pricing} />
-          <Route path="/blog" component={Blog} />
+          <Route path="/blog" render={(props) => <Blog {...props} posts={this.state.posts}/> } />
+          <Route path="/howitworks" component={HowItWorks} />
+          <Route path="/contact" component={ContactUs} />
+          <Route path="/submission" component={ReceivedContact} />
+          <Route path="/blogs/:id" render={(props) => {
+            return <BlogItem {...props} posts={this.state.posts} />
+          }} />
           {/* when none of the above match, <NoMatch> will be rendered */}
-          <Route render={() => <Redirect to="/" />} />
+          <Route render={(props) => <Redirect to="/" {...props} />} />
         </Switch>
         <Footer />
       </div>

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/styles';
-import pricingBackground from '../../assets/illustration/pricingBackground.png';
 import checkSymbol from '../../assets/illustration/checkSymbol.svg';
 import patternBackgroundPricing from '../../assets/illustration/patternBackgroundPricing.png';
+import { Link } from 'react-router-dom';
 
 const styles = {
     content: {
@@ -27,12 +27,17 @@ const styles = {
     chart: {
         backgroundColor: 'white',
         display: 'grid',
-        gridTemplateColumns: '25% 25% 25% 25%',
+        gridTemplateColumns: '1fr 1fr 1fr 1fr',
         fontFamily: 'Barlow',
         textAlign: 'center',
         borderRadius: '15px',
         boxShadow: '0 30px 60px 0 rgba(17, 6, 47, 0.1)',
-        marginTop: '-18em'
+        //marginTop: '-18em',
+        marginTop: '-300px',
+        paddingBottom: '40px',
+        gridGap: '5px',
+        paddingRight: '5px',
+        paddingLeft: '5px'
     },
     chartPPrice: {
         fontSize: '1.5em',
@@ -53,11 +58,20 @@ const styles = {
         margin: 0,
     },
     chartButton: {
-        width: '96px',
+        backgroundImage: 'linear-gradient(to bottom, rgba(141, 225, 168, 0.2), rgba(60, 220, 124, 0.2));',
+        //opacity: .1,
         height: '50px',
-        borderRadius: '31px',
-        boxShadow: '0 7.5px 15px 0 rgba(60, 220, 124, 0.2)',
-        backgroundImage: 'linear-gradient(to bottom, #8de1a8, #3cdc7c)'
+        width: '100px',
+        color: '#3cdc7c',
+        fontWeight: 600,
+        border: 'none',
+        borderRadius: '25px',
+        outline: 'none !important',
+        backgroundColor: 'rgba(0,0,0,0) !important',
+        '&:hover': {
+            backgroundImage: 'linear-gradient(to bottom, #8de1a8, #3cdc7c)',
+            color: 'white'
+        }
     },
     chartSpan: {
         fontWeight: 600
@@ -187,7 +201,7 @@ class Pricing extends Component {
                 <p className={classes.chartAmount}>{item.amount.toLocaleString()}+</p>
                 <p className={classes.chartOrder}>/ transactions per month</p>
                 <div className={classes.buttonDiv}>
-                    <button className={classes.chartButton}>Sign up</button>
+                   <Link to="/contact"><button className={classes.chartButton}>Sign up</button></Link> 
                 </div>
                 <div className={classes.checkDiv}>
                     <img className={classes.imageCheck} src={checkSymbol} alt="" />
@@ -215,11 +229,11 @@ class Pricing extends Component {
         const { classes } = this.props;
         return (
             <div>
-                <div
+                <div className="pricingMain"
                     style={{
                         display: 'grid',
                         gridTemplateColumns: '15% 70% 15%',
-                        backgroundImage: `url(${pricingBackground})`,
+                        backgroundImage: `url('bg.png')`,
                         color: 'white',
                         paddingTop: '10em',
                         minHeight: '726px'
@@ -234,8 +248,8 @@ class Pricing extends Component {
                             </div>
 
                             <p className={classes.contentP}>
-                                Every client is unique - and at eFraud Security, we offer tailored solutions for every set of needs.
-                            <br />
+                                Every client is unique - and at FraudFix, we offer tailored solutions for every set of needs.
+                            
                                 our custom-tailored setups, adjustments and performance monitoring for each account is included in our pricing.
                             </p>
                         </div>
@@ -244,21 +258,21 @@ class Pricing extends Component {
                     <div></div>
 
                 </div>
-                <div className={classes.chartMainDiv}>
+                <div className={classes.chartMainDiv + ' pricingMainDiv'}>
                     <div></div>
-                    <div className={classes.chart}>
+                    <div className={classes.chart + ' pricingChart'}>
                         {this.renderPrices()}
                     </div>
                     <div></div>
                 </div>
-                <div className={classes.mainContent}>
+                <div className={classes.mainContent + ' pricingMainContent'}>
                     <div></div>
                     <div>
 
                         <div>
                             <h3 className={classes.mainContentH3}>All pricing plans with free setup, pay-as-you-go, no long term
                             <br />contracts, & include the following features:</h3>
-                            <div className={classes.grid4}>
+                            <div className={classes.grid4 + ' pricingGrid4'}>
                                 {this.renderGrid4()}
                             </div>
                         </div>
@@ -274,3 +288,19 @@ class Pricing extends Component {
 }
 
 export default withStyles(styles)(Pricing);
+
+// chartButton: {
+//     backgroundImage: 'linear-gradient(to bottom, rgba(141, 225, 168, 0.2), rgba(60, 220, 124, 0.2));',
+//     //opacity: .1,
+//     height: '50px',
+//     width: '100px',
+//     color: '#3cdc7c',
+//     fontWeight: 600,
+//     border: 'none',
+//     borderRadius: '25px',
+//     outline: 'none !important',
+//     backgroundColor: 'rgba(0,0,0,0) !important',
+//     '&:hover': {
+//         backgroundImage: 'linear-gradient(to bottom, #8de1a8, #3cdc7c',
+//         color: 'white',
+//     }

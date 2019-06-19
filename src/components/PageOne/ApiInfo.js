@@ -11,11 +11,9 @@ import purpleCircle from '../../assets/illustration/customerLogos/chart/purpleCi
 
 const useStyles = makeStyles(theme => ({
     theDiv: {
-        //backgroundImage: 'linear-gradient(to left, rgba(255, 255, 255, 0), rgba(235, 233, 238, 0.3))',
         backgroundImage: `url(${background})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'contain',
-        //minHeight: '1000px',
         fontFamily: 'Barlow',
         display: 'grid',
         gridTemplateColumns: '15% 70% 15%',
@@ -28,7 +26,9 @@ const useStyles = makeStyles(theme => ({
         letterSpacing: '-0.1px',
         textAlign: 'center',
         color: '#11062f',
-        paddingBottom: '1em'
+        paddingBottom: '1em',
+        width: '50%',
+        margin: '0 auto'
     },
     grid4: {
         display: 'grid',
@@ -44,24 +44,24 @@ const useStyles = makeStyles(theme => ({
         backgroundImage: 'linear-gradient(to bottom, #8de1a8, #3cdc7c)',
         height: '48px',
         width: '144px',
-        //marginLeft: '-36px',
         boxShadow: '0 7.5px 15px 0 rgba(60, 220, 124, 0.2)',
         color: 'white',
         fontFamily: 'Barlow',
         fontWeight: 600,
         border: 'none',
-        borderRadius: '25px'
+        borderRadius: '25px',
+        outline: 'none !important'
     },
     grid3: {
         display: 'grid',
-        gridTemplateColumns: '33.3% 33.3% 33.3%',
+        gridTemplateColumns: '1fr 1fr 1fr',
+        gridGap: '10px',
         width: '80%',
         margin: '0 auto',
-        //justifyItems: 'center'
     },
     grid2: {
         display: 'grid',
-        gridTemplateColumns: '30% 70%',
+        gridTemplateColumns: '30% 60%',
         gridGap: '10px'
     },
     line: {
@@ -104,16 +104,16 @@ const useStyles = makeStyles(theme => ({
 export default () => {
     const classes = useStyles();
     return (
-        <div className={classes.theDiv}>
+        <div className={classes.theDiv + ' pageOneApiInfo'}>
             <div></div>
             <div>
                 <div className={classes.firstInnerDiv}>
-                    <h3 className={classes.h3}>We use customized APIs for
-                    <br />
+                    <h3 className={classes.h3 + ' pageOneH3Apis'}>We use customized APIs for
+                    
                         smooth integration with any platform, including:
                 </h3>
 
-                    <div className={classes.grid4}>
+                    <div className={classes.grid4 + ' iconGrid'}>
                         <div className={classes.images}>
                             <img src={magento} alt="" className={classes.images} />
                         </div>
@@ -135,41 +135,39 @@ export default () => {
                     </div>
 
 
-                    <div className={classes.grid3}>
-                        <div className={classes.grid2}>
+                    <div className={classes.grid3 + ' apiInfoGrid3'}>
+                        <div className={classes.grid2 + ' apiInfoGrid2'}>
                             <img src={purpleCircle} alt="" className={classes.images} />
                             <div>
-                                <p className={classes.apiP}>
-                                    Under 1 second <br />
+                                <p className={classes.apiP + ' apiP'}>
+                                    Under 1 second 
                                     response time
                             </p>
                             </div>
                         </div>
 
-                        <div className={classes.grid2}>
+                        <div className={classes.grid2  + ' apiInfoGrid2'}>
                             <img src={greenCircle} alt="" className={classes.images} />
                             <div>
-                                <p className={classes.apiP}>
+                                <p className={classes.apiP  + ' apiP'}>
                                     Up to 98%
-                                <br />
+                              
                                     Approvals
                             </p>
                             </div>
                         </div>
 
-                        <div className={classes.grid2}>
+                        <div className={classes.grid2  + ' apiInfoGrid2'}>
                             <img src={yellowCircle} alt="" className={classes.images} />
                             <div>
-                                <p className={classes.apiP}>
-                                    Hundreds of data<br />
+                                <p className={classes.apiP  + ' apiP'}>
+                                    Hundreds of data
                                     points
                             </p>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                
             </div>
 
             <div></div>

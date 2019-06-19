@@ -1,17 +1,97 @@
-.buttonStyle {
-    position: relative;
-    z-index: 1;
-    color: white
+.theButton:before {
+    content: 'Contact us';
+    
 }
 
-.buttonStyle:before {
-    content: "";
-    position: absolute;
+.theSlideButton:before  {
+    z-index: 10;
+    content: 'Contact us';
+    animation-name: slideButton;
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-timing-function: ease-in;
+  animation-duration: 4s;
+}
+
+.theSlideInput  {
     z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-image: 'linear-gradient(to bottom, rgba(151, 20, 244, 0.2), rgba(96, 0, 164, 0.2))';
+    animation-name: slideinput;
+    animation-duration: 5s;
+    /* width: '279px', */
+}
+
+.theMobileSlideInput  {
+    z-index: -1;
+    animation-name: mobileslideinput;
+    animation-duration: 5s;
+    /* width: '279px', */
+}
+/* @keyframes slideButton {
+    
    
+     0% {
+         opacity:1;
+        z-index: 10;
+        width: 118px;
+        -webkit-animation-timing-function: ease-in;
+        }
+       
+        50% {
+          
+            width: 300px;
+            z-index: 10;
+            opacity:1;
+            }
+        100% {
+            -webkit-animation-timing-function: ease-in;
+            width: 118px;
+            z-index: 10;
+            opacity:1;
+            }
+
+  } */
+
+  @keyframes mobileslideinput {
+      
+    0% {
+        z-index: -1;
+        width:270px; 
+    }
+    
+    50% {
+        z-index: -1;
+        width:0px; 
+        
+    }
+
+    100% {
+        z-index: -1;
+        width:270px; 
+    }
   }
+  @keyframes slideinput {
+      
+    0% {
+        z-index: -1;
+        width:300px; 
+    }
+    
+    50% {
+        z-index: -1;
+        width:0px; 
+        
+    }
+
+    100% {
+        z-index: -1;
+        width:300px; 
+    }
+  }
+
+  .theInput:-webkit-autofill {
+    background-color: rgba(47, 34, 85, 0.5) !important;
+    -webkit-text-fill-color: white !important;
+    -webkit-background-color: rgba(47, 34, 85, 0.5) !important;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(47, 34, 85, 1)  inset;
+    transition: background-color 5500s ease-in-out 0s;
+    border: none;
+}

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/styles';
-import pricingBackground from '../../assets/illustration/pricingBackground.png';
 import aboutUsBottomBackground from '../../assets/illustration/aboutUsBottomBackground.png';
 
 const styles = {
@@ -37,7 +36,8 @@ const styles = {
     },
     grid2: {
         display: 'grid',
-        gridTemplateColumns: '30% 70%',
+        gridTemplateColumns: '1fr 2.2fr',
+        gridGap: '20px'
     },
     grid2P: {
         fontSize: '2em',
@@ -75,8 +75,6 @@ const styles = {
 };
 
 class About extends Component {
-
-
     render() {
         const { classes } = this.props;
         return (
@@ -85,13 +83,12 @@ class About extends Component {
                     style={{
                         display: 'grid',
                         gridTemplateColumns: '15% 70% 15%',
-                        backgroundImage: `url(${pricingBackground})`, color: 'white',
+                        backgroundImage: `url('bg.png')`, color: 'white',
                         paddingTop: '10em',
                         paddingBottom: '6em'
                     }}>
                     <div></div>
                     <div>
-
                         <div className={classes.content}>
                             <div className={classes.gridLine}>
                                 <h2 className={classes.contentH2}>About us</h2>
@@ -103,24 +100,36 @@ class About extends Component {
                             <span className={classes.contentSpan}>93.5% approvals on average.</span>
                             </p>
                         </div>
-
                     </div>
                     <div></div>
                 </div>
-                <div className={classes.grid3}>
+                <div className={classes.grid3 + ' aboutPageGrid3'}>
                     <div></div>
-                    <div className={classes.grid2}>
+                    <div className={classes.grid2 + ' aboutusGrid2'}>
                         <div>
-                            <p className={classes.grid2P}>Phasellus fermentum in, pellentesque facilitisis nulla</p>
+                            <p className={classes.grid2P}>Maximize your revenue today <br/> and join ranks <br/>with our satisfied clients!</p>
                         </div>
                         <div>
-                            <p className={classes.commentHeader}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, reiciendis repellendus vitae fugit ipsum quod at excepturi amet ducimus hic tempore minima dolorum rem deleniti?</p>
-                            <div className={classes.grid2Column}>
+                            <p className={classes.commentHeader}>
+                            We specialize in high volume B2B and B2C eCommerce merchants, brick and mortar 
+                            retailers with a CNP or MOTO (mail order/ telephone order) channel, amongst a wide array 
+                            of other industries. We service Credit Card Processors & IT Resellers. For resellers, we offer 
+                            discounted pricing and a customized reseller’s portal.</p>
+                            <div className={classes.grid2Column + ' aboutusGrid2'}>
                                 <div>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quas corrupti perspiciatis sapiente quaerat non reprehenderit quis pariatur odio! Commodi quae repellat rem possimus facere itaque dolorem, enim quaerat voluptatibus cum pariatur aperiam! Eveniet accusamus fugiat optio voluptates odit est reiciendis sed. Iure sapiente sunt assumenda similique molestiae accusamus quos ut saepe, beatae error nisi aut dicta! Dolorum architecto amet, deserunt tenetur fugiat corporis, nihil sed quis assumenda illum libero repellat debitis soluta officia rerum aspernatur veritatis rem laudantium?</p>
+                                    <p>At FraudFix, formerly eFraud Security, our primary focus is to offer a 
+                                        fully-automated verification service with pricing roughly 30-40% lower than any in-house solution – with a full i
+                                        nsurance guarantee! In fact, FraudFix is the pioneer of credit card verification with a guarantee and led the 
+                                        industry before competition arose. At rates as low as 5¢ per transaction and only a quarter percent for optional guarantee, 
+                                        FraudFix’s pricing is a no-brainer. 
+                                        Additionally, FraudFix does not charge any setup fees, monthly fees, or lock merchants into long-term contracts.</p>
                                 </div>
                                 <div>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quas corrupti perspiciatis sapiente quaerat non reprehenderit quis pariatur odio! Commodi quae repellat rem possimus facere itaque dolorem, enim quaerat voluptatibus cum pariatur aperiam! Eveniet accusamus fugiat optio voluptates odit est reiciendis sed. Iure sapiente sunt assumenda similique molestiae accusamus quos ut saepe, beatae error nisi aut dicta! Dolorum architecto amet, deserunt tenetur fugiat corporis, nihil sed quis assumenda illum libero repellat debitis soluta officia rerum aspernatur veritatis rem laudantium?</p>
+                                    <p>FraudFix offers a smooth, automated verification process. 
+                                        Not only does it offer high transaction approval rates, 
+                                        but it also accepts the risk – preventing 
+                                        fraudulent orders, increasing approval rates, and ultimately driving your 
+                                        company’s revenue forward. …Because more approvals mean more money!</p>
 
                                 </div>
                             </div>

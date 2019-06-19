@@ -1,0 +1,890 @@
+@media only screen and (max-width: 1750px) {
+    .blogItemImage {
+        width: 312px !important;
+        height: 200px !important;
+    }
+
+    .blogItemPageGrid {
+        grid-template-rows: 0.7fr .3fr 0.3fr !important;
+        grid-template-columns: 35% 35% 30% !important;
+    }
+}
+
+@media only screen and (max-width: 1555px) {
+    .blogItemPageGrid {
+        grid-template-rows: 0.7fr .3fr 0.3fr !important;
+        grid-template-columns: 40% 40% 20% !important;
+    }
+
+    .blogItemMessageDiv {
+        height: 180px !important;
+    }
+}
+
+
+
+@media only screen and (max-width: 1500px) {
+    
+    .divForImage {
+        width: 100% !important;
+    }
+
+    .leftColumn {
+        padding-top: 158px !important;
+    }
+
+    .navbarUl {
+        padding-left: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 1415px) {
+    .blogItemImage {
+        width: 265px !important;
+        height: 170px !important;
+    }
+    .blogItemPageGrid {
+        grid-template-rows: 0.7fr .3fr 0.3fr !important;
+        grid-template-columns: 35% 35% 30% !important;
+    }
+}
+
+@media only screen and (max-width: 1355px) {
+   .navbar-grid {
+       grid-template-columns: 40% 60% !important;
+   }
+
+   .footerGrid {
+       grid-template-columns: 50% 50% !important;
+   }
+
+   .blogHeader{
+       grid-template-columns: 1fr 1.5fr 1fr !important;
+   }
+
+   .dateImageDiv {
+    grid-template-columns: 7% 48% 45% !important;
+   }
+
+   .leftColumn {
+    /* padding-top: 103px !important; */
+    }
+
+    .searchDiv {
+        grid-template-columns: 1fr 4fr 1fr !important;
+    }
+
+    .gridForOverlapLarge {
+        grid-template-rows: 1fr 0.7fr 0.7fr !important;
+    }
+
+    .gridForOverlapSmall {
+        grid-template-rows: 1fr 1.3fr 1fr !important;
+    }
+
+    .mainDivTechnology {
+        margin-top: -151px !important;
+    }
+
+    .pageOneTechnologyP {
+        width: 60% !important;
+    }
+
+    .apiInfoGrid2 {
+        grid-template-columns: 30% 70%;
+    }
+
+    .blogItemPageGrid {
+        grid-template-rows: 1fr 1fr 0.4fr !important;
+    }
+  }
+
+  @media only screen and (max-width: 1305px) {
+    .blogItemPageGrid {
+        grid-template-rows: 0.7fr .3fr 0.3fr !important;
+        grid-template-columns: 40% 40% 20% !important;
+    }
+}
+
+  @media only screen and (max-width: 1276px) {
+    .searchDiv {
+        grid-template-columns: 10% 80% 10% !important;
+    }
+
+    .gridMaster {
+        padding-top: 70px !important;
+    }
+
+    
+}
+
+
+  @media only screen and (max-width: 1226px) {
+    .navbar-grid {
+        grid-template-columns: 35% 65% !important;
+    }
+
+    .pageOneMainDiv {
+        padding-top: 36px !important;
+    }
+
+    .searchDiv {
+        height: 160px !important;
+        padding-top: 17px !important;
+    }
+    .navbarUl {
+        font-size: 16px !important;
+        grid-gap: 0px !important;
+    }
+  }
+
+  @media only screen and (max-width: 1176px) {
+    .copyright {
+        grid-template-columns: 45% 55% !important;
+    }
+
+    .copyrightFooter {
+        grid-gap: 0 !important;
+    }
+
+    .leftColumn {
+        padding-top: 136px !important;
+    }
+
+    .theImagesWhatWeDo {
+        width: 100% !important;
+    }
+
+    .twoColumnDivWhatWeDo {
+        grid-gap: 25px !important;
+    }
+
+    .contactUsContentP {
+        width: 100% !important;
+    }
+  }
+
+  @media only screen and (max-width: 1148px) {
+    .dateImageDiv {
+        grid-template-columns: 7% 55% 37% !important;
+       }
+
+    .copyrightP {
+        font-size: 15px !important;
+    }
+
+    .mainDivTechnology {
+        margin-top: -170px !important;
+    }
+
+    .outerDivTechnology {
+        padding-top: 175px !important;
+    }
+  }
+
+  @media only screen and (max-width: 1135px) {
+    /* .leftColumn {
+        padding-top: 37px !important;
+        } */
+
+        .divForImage {
+                width: 90% !important;
+        }
+
+        /* .bigImage {
+            height: 100%;
+        } */
+        .blogItemMain,
+        .blogItemMainContent,
+     
+        .blogMain,
+        .pricingMain,
+        .footerMain,
+        .navroot,
+        .pageOneMainDiv {
+            grid-template-columns: 10% 80% 10% !important;
+        }
+        .pageOneH3Apis {
+            width: 70% !important;
+        }
+       
+  }
+
+  @media only screen and (max-width: 1135px) {
+    .contactUsGrid3 {
+        grid-template-columns: 5% 90% 5% !important;
+    }
+
+    .welcomeHeader {
+        font-size: 50px !important;
+        }
+  }
+
+  @media only screen and (max-width: 995px) {
+    
+    .blogItemMain,
+    .blogItemMainContent,
+    .contactusMainGrid,
+    .blogMain,
+    .pricingMain,
+    .footerMain,
+    .navroot,
+    .contactUsGrid3,
+    .pageOneMainDiv {
+        grid-template-columns: 5% 90% 5% !important;
+    }
+
+    .techologyGridThree {
+        grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr !important;
+    }
+
+    .techologyGridTwo {
+        grid-template-columns: 0.5fr 1fr 1fr 0.5fr  !important;
+    }
+
+    .pageOneTechnologyP {
+        width: 55% !important;
+    }
+
+    .divForImage {
+        width: 82% !important;
+        text-align: right;
+        padding-right: 0 !important;
+        margin-left : 0 !important;
+        padding-left : 0 !important;
+        margin: 0 auto !important;
+    }
+
+    .leftColumn {
+        padding-top: 128px !important;
+    }
+
+    .gridForOverlapLarge {
+        grid-template-rows: 1fr 1fr 0.7fr !important;
+    }
+    .blogItemMessageDiv {
+       height: 230px !important;
+    }
+   
+  }
+
+  @media only screen and (max-width: 946px) {
+    .blogItemImage {
+        width: 218px !important;
+        height: 140px !important;
+    }
+    .blogItemPageGrid {
+        grid-template-rows: 0.6fr .5fr 0.3fr !important;
+        grid-template-columns: 35% 35% 30% !important;
+    }
+}
+
+  @media only screen and (max-width: 888px) {
+    .gridMaster {
+        grid-template-columns: 1fr 0.7fr !important;
+    }
+
+    .divForImage {
+        width: 100% !important;
+        margin: 0  !important;
+    }
+    .navbarUl {
+        padding: 0;
+    }
+
+    .iconGrid {
+        width: 88% !important;
+    }
+
+    .apiInfoGrid3 { 
+        width: 100% !important;
+    }
+
+    .howItWorksPageGrid3 {
+        grid-template-columns: 10% 80% 10% !important;
+    }
+
+    .phoneDiv {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+    }
+
+    .contactUsGrid2 {
+        grid-gap: 20px;
+    }
+
+    .blogHeader{
+        grid-template-columns: 1fr 1fr 1fr !important;
+    }
+
+    .dateImageDiv {
+        grid-template-columns: 7% 59% 33% !important;
+       }
+
+       .mainDivTechnology {
+        margin-top: -177px !important;
+    }
+  }
+
+  @media only screen and (max-width: 848px) {
+      .navbarUl {
+        font-size: 15px !important;
+      }
+
+    .blogItemPageGrid {
+        grid-template-rows: 0.6fr .5fr 0.3fr !important;
+        grid-template-columns: 40% 40% 20% !important;
+    }
+    .footerGrid {
+        grid-template-columns: 55% 45% !important;
+    }
+
+    /* .gridForOverlapLarge {
+        grid-template-rows: 1fr 0.7fr 0.7fr !important;
+    } */
+
+    .gridForOverlapSmall {
+        grid-template-rows: 1fr 1.3fr 1fr !important;
+    }
+    .mainDivTechnology {
+        margin-top: -190px !important ;
+    }
+    .contactUsGrid2 {
+        display: block !important;
+        text-align: center !important;;   
+    }
+    .successEmail {
+        margin-left: 40px !important;;
+        margin-bottom: 0 !important;; 
+        margin-top: 30px !important;;
+    }
+    .smallLineContactUs {
+        margin: 0 auto !important;
+    }
+
+    .phoneDiv {
+        display: block !important;
+        margin-top: 30px !important;;
+    }
+
+    .contactUsFormDiv {
+        /* padding-top: 50px; */
+        display: block !important;
+        text-align: left !important;;
+        padding-left: 40px !important;;
+    }
+
+    .inputItem {
+        padding-top: 30px !important;;
+    }
+
+    .inputTextarea {
+        margin-top: 30px !important;
+    }
+  }
+
+  @media only screen and (max-width: 816px) {
+    .navbarUl {
+       font-size: 16px !important;
+    }
+    .pricingMainDiv,
+    .pageOneApiInfo,
+    .pageOneHowItWorks {
+        grid-template-columns: 5% 90% 5% !important;
+    }
+
+    .copyrightFooter {
+        display: none !important;
+    }
+
+    .copyright {
+        display: block !important;
+    }
+
+    .copyrightP {
+        padding-top: 30px !important;
+    }
+
+    .pageOneTechnologyP {
+        width: 80%
+    }
+
+    .mainDivTechnology {
+        margin-top: -210px !important;
+    }
+
+    .pricingGrid4 {
+        grid-template-columns: 1fr 1fr 1fr !important;
+    }
+
+    .outerDivTechnology {
+        padding-top: 185px !important;
+    }
+  }
+
+  @media only screen and (max-width: 795px) {
+    .blogItemImage {
+        width: 312px !important;
+        height: 200px !important;
+        display: block !important;
+    }
+    .blogItemPageGrid {
+        display: block !important;
+        text-align: center !important;
+        margin-bottom: 157px !important;
+        position: relative !important;
+        display: inline-block !important;
+    }
+
+    .blogItemsGrid3 {
+        display: block !important;
+        text-align: center !important;
+
+    }
+
+    .blogItemMessageDiv {
+        width: 250px !important;
+        height: 180px !important;
+        text-align: center; 
+    }
+
+    .messageDivOuterDiv {
+        /* margin-left: 27%;  */
+        text-align: center !important;
+        position: absolute !important;
+        top:  116%;
+        right: -19%;  
+        transform: translate( -50%, -50% );
+    }
+  }
+
+
+  @media only screen and (max-width: 774px) {
+    .navbar-grid {
+        padding-bottom: 24px;
+    }
+    .footerGrid {
+        grid-template-columns: 60% 40% !important;
+    }
+
+    .bigFraudFixLogo {
+        display: none;
+    }
+
+    .smallFraudFixLogo {
+        display: initial !important;
+    }
+
+    .navbarUl {
+        font-size: 15px !important;
+        margin-bottom: 0 !important;
+    }
+
+    .navbarLogo {
+        align-self: center;
+    }
+
+    .gridMaster {
+        grid-template-columns: 1fr 0.6fr !important;
+    }
+
+    .leftColumn {
+        padding-top: 100px !important;
+        /* padding-right: 20px !important; */
+    }
+
+    .divForImage {
+       padding-top: 53px;
+    }
+
+    .blogHeader{
+        grid-template-columns: 1fr 0.7fr 1fr !important;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* .blogItemMessageDiv {
+        top: 30% !important;
+        right: 37% !important;   
+    } */
+  }
+
+  @media only screen and (max-width: 738px) {
+    .navbarUl {
+        display: none !important;
+    }
+    .mobileDrawer {
+        display: block !important;
+    }
+    .navbarMenuList {
+        justify-self: end
+    }
+  }
+
+  @media only screen and (max-width: 722px) {
+      .leftColumn {
+        padding-top: 20px !important;
+      }
+    .welcomeHeader {
+        font-size: 40px !important;
+    }
+    .gridMaster {
+        display: block !important;
+        text-align: center !important;
+    }
+
+    .rightSideImage {
+        display: none !important;
+    }
+    .footerGrid {
+        display: block !important;
+        text-align: center;
+    }
+    .line {
+        display: none !important;
+    }
+
+    .iconsLargeScreen {
+        display: none !important;
+    }
+
+    .carousel {
+        margin: 0 auto !important;
+    }
+
+    .carousel .slide{
+        background-color: inherit ;
+    }
+
+    .pageOneMainDiv {
+        padding-bottom: 35px !important;
+    }
+
+    .theButton {
+        display: none !important;
+    }
+    .mobileButton {
+        display: inline-block !important;
+
+    }
+
+    .welcomeHeader {
+        width: 67%;
+        margin: 0 auto;
+    }
+
+    .smallIconsWelcome {
+        display: initial !important;
+    }
+
+    .twoColumnDivWhatWeDo {
+        display: none !important;
+    }
+
+    .mobileArrayDiv {
+        display: initial !important;
+    }
+    .theImagesWhatWeDo {
+        width: inherit !important;
+        text-align: center;
+    }
+
+    .theDivForWhatWeDoImage {
+        padding-top: 35px;
+        text-align: center;
+    }
+
+    .gridOfImagesTechnology {
+        display: none !important;
+    }
+
+    .togglerForMobileDiv {
+        display: initial !important;
+      
+    }
+    .outerDivTechnology {
+        overflow: hidden !important;
+    }
+
+    .mobileGraphImage {
+        width: 1000px
+    }
+    .innerDivRowTechnology,
+    .techologyGridTwo,
+    .techologyGridThree {
+        display: initial !important;
+        text-align: center !important;
+    }
+
+    .arrayOfTagsTechnology {
+        margin: 0 auto !important;
+    }
+
+    .iconGrid {
+       grid-template-columns: 1fr 1fr !important;
+    }
+
+    .apiInfoGrid2,
+    .apiInfoGrid3 {
+        display: block !important;
+        margin: 0 auto;
+        text-align: center !important;
+    }
+
+    .apiInfoGrid2 {
+        padding-bottom: 20px;
+    }
+
+    .apiP {
+        padding-top: 20px;
+    }
+
+    .pageOneHowItWorks {
+        display: block !important;
+        text-align: center;
+    }
+
+    .footerGrid3 {
+        display: block !important;
+    }
+
+    .largeScreenFooterLogo {
+        display: none !important;
+    }
+
+    .mobileFooterLogo {
+        display: block !important;
+        margin: 0 auto;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
+    .footerGridLogos {
+        display: block !important;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .socialLogos {
+        padding: 15px;
+    }
+
+    .copyright {
+        text-align: center;
+        width: 37%;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    .pricingChart {
+        margin-top: -240px !important;
+    }
+
+    .mobileBlogPage {
+        display: none;
+    }
+
+    .blogMainContent {
+        display: block !important;
+    }
+
+   
+
+    .inputForMobile {
+        width: 300px;
+    }
+
+    .blogPageMainContent,
+    .pricingMainContent,
+    .aboutPageGrid3 {
+        grid-template-columns: 5% 90% 5% !important;
+    }
+
+    .pricingGrid4 {
+        grid-gap: 20px !important;
+    }
+
+    .gridForOverlapLarge {
+        grid-template-rows: 1fr 0.6fr 0.7fr !important;
+    }
+
+    .gridForOverlapSmall {
+        grid-template-rows: 1fr 1.3fr 1fr !important;
+    }
+  }  
+
+  @media only screen and (max-width: 690px) { 
+    .mainDivTechnology {
+        margin-top: -250px !important;
+    }
+
+    .outerDivTechnology {
+        padding-top: 220px !important;
+    }
+    .aboutusGrid2 {
+        display: block !important;
+    }
+  }
+
+  @media only screen and (max-width: 690px) { 
+      .pricingChart {
+          grid-template-columns: 1fr 1fr !important;
+      }
+
+      .blogHeader {
+        grid-template-columns: 1fr 0.5fr 1fr !important;
+    }
+  }
+
+  @media only screen and (max-width: 629px) { 
+    .blogHeader {
+        grid-template-columns: 1fr 0.3fr 1fr !important;
+    }
+  }
+  @media only screen and (max-width: 600px) { 
+    .mainDivTechnology {
+        margin-top: -287px !important;
+    }
+
+    .gridHowItWorksPage {
+        display: block !important;
+    }
+    .outerDivTechnology {
+        padding-top: 240px !important;
+    }
+    
+    .pricingGrid4 {
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .copyright {
+        width: 50%;
+    }
+
+    .blogMessageP {
+        font-size: 30px !important;
+    }
+
+    .gridForOverlapLarge {
+        grid-template-rows: 1fr 0.8fr 0.7fr !important;
+    }
+   }
+
+   @media only screen and (max-width: 580px) { 
+    .blogHeader {
+        grid-template-columns: 1fr 0.1fr 1fr !important;
+    }
+   }
+
+   @media only screen and (max-width: 531px) { 
+    .blogListShare {
+        display: none;
+    }
+    .blogMessageP {
+        font-size: 28px !important;
+    }
+
+    .gridForOverlapLarge {
+        grid-template-rows: 1fr 1fr 0.7fr !important;
+    }
+   }
+
+   @media only screen and (max-width: 460px) { 
+    .mainDivTechnology {
+        margin-top: -353px !important;
+    }
+    .pageOneTechnologyP {
+        width: 75% !important;
+    }
+    .outerDivTechnology {
+        padding-top: 339px !important;
+    }
+    .copyright {
+        width: 58%;
+    }
+    .pricingChart {
+        margin-top: -171px !important;
+    }
+
+    .gridForOverlapLarge {
+        grid-template-rows: 1fr 1fr 0.9fr !important;
+    }
+   }
+
+   @media only screen and (max-width: 400px) { 
+    .gridForOverlapLarge {
+        grid-template-rows: 1fr 1.1fr 1fr !important;
+    }
+
+    .mainDivTechnology {
+        margin-top: -412px !important;
+    }
+
+    .outerDivTechnology {
+        padding-top: 400px !important;
+    }
+
+    .pricingGrid4 {
+        grid-gap: 10px !important;
+    }
+
+    .blogMessageP {
+        font-size: 24px !important;
+    }
+
+    .contactUsFormDiv {
+        text-align: center !important;
+        padding-left: 0px !important;
+    }
+
+    .successEmail {
+        margin-left: 0 !important;
+    }
+
+    /* .mobileDrawer,
+    .navbarMenuList,
+    .navbarLogo,
+    .navbar-grid {
+        display: inline !important;
+    } */
+   }
+
+   @media only screen and (max-width: 388px) { 
+    .theInput{
+        width: 270px !important;
+    }
+    .copyright {
+        width: 65%;
+    }
+    .blogItemImage {
+        max-width: 290px !important;
+    }
+    .messageDivOuterDiv {
+        right: -29% !important;
+    }
+   }  
+
+   @media only screen and (max-width: 355px) { 
+    .gridForOverlapLarge {
+        grid-template-rows: 1fr 1.3fr 1fr !important;
+    }
+
+    .theInput{
+        display: none !important;
+    }
+
+    .mobileButton {
+        display: none !important;
+    }
+    .blogHeader {
+        grid-template-columns: 1fr 0.1fr 0.8fr !important;
+    }
+    
+    
+   }  
+
+   @media only screen and (max-width: 335px) { 
+    .copyright {
+        width: 75%;
+    }
+   }  

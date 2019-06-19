@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="135px" viewBox="0 0 150 135" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="99.9985812%" y1="49.9860772%" x2="0.0260641093%" y2="49.9860772%" id="linearGradient-1">
+            <stop stop-color="#3CDC7C" offset="0%"></stop>
+            <stop stop-color="#95EBB1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="99.4793901%" y1="96.9754852%" x2="12.9401157%" y2="14.8689243%" id="linearGradient-2">
+            <stop stop-color="#3CDC7C" offset="0%"></stop>
+            <stop stop-color="#95EBB1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="💜-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="illustration-/-hero" transform="translate(3.000000, -323.000000)">
+            <g id="illustration" transform="translate(-9.000000, 0.000000)">
+                <g id="Group" transform="translate(6.000000, 323.000000)">
+                    <g opacity="0.25" transform="translate(7.451284, 0.000000)" fill="url(#linearGradient-1)" id="Path">
+                        <path d="M0.223538523,4.13114754 L0,49.4262295 C0,52.5245902 1.6392825,55.4016393 4.39625762,56.9508197 L135.985935,132.04918 C138.444859,133.45082 141.574398,131.680328 141.574398,128.877049 L141.797936,83.5819672 C141.797936,80.4836066 140.158654,77.6065574 137.401679,76.057377 L5.8120016,0.959016393 C3.35307784,-0.516393443 0.223538523,1.25409836 0.223538523,4.13114754 Z"></path>
+                    </g>
+                    <path d="M0.223538523,6.41803279 L0.074512841,51.6393443 C0.074512841,54.7377049 1.71379534,57.6147541 4.47077046,59.1639344 L135.985935,134.262295 C138.444859,135.663934 141.574398,133.893443 141.574398,131.090164 L141.797936,85.795082 C141.797936,82.6967213 140.158654,79.8196721 137.401679,78.2704918 L5.8120016,3.17213115 C3.35307784,1.7704918 0.223538523,3.54098361 0.223538523,6.41803279 Z" id="Path" fill="url(#linearGradient-2)"></path>
+                    <g transform="translate(54.394374, 46.475410)" fill="#FFFFFF" id="Path" opacity="0.75">
+                        <polygon points="0.670615569 0.295081967 0.670615569 7.74590164 67.6576596 45.5901639 67.6576596 38.1393443"></polygon>
+                        <polygon points="0.670615569 18.147541 0.670615569 29.6557377 67.6576596 67.5 67.6576596 55.9918033"></polygon>
+                    </g>
+                    <g opacity="0.75" transform="translate(15.647697, 26.557377)" fill="#FFFFFF" id="Path">
+                        <path d="M15.5731838,2.7295082 C7.07871989,-2.13934426 0.149025682,1.7704918 0.149025682,11.4344262 C0.149025682,21.0983607 7.00420705,32.8278689 15.4986709,37.6967213 C23.9931348,42.5655738 30.8483162,38.6557377 30.922829,28.9918033 C30.922829,19.3278689 24.0676476,7.59836066 15.5731838,2.7295082 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

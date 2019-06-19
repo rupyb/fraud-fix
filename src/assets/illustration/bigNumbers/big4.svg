@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="112px" viewBox="0 0 90 112" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>big number (gradient)</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="1.09962066%" x2="50%" y2="96.8095195%" id="linearGradient-1">
+            <stop stop-color="#2F2255" stop-opacity="0.1" offset="0%"></stop>
+            <stop stop-color="#11062F" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="💵-Fraudfix" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Barlow-ExtraBold, Barlow ExtraBold" font-size="160" font-weight="600">
+        <g id="How-it-works" transform="translate(-880.000000, -1025.000000)" fill="url(#linearGradient-1)">
+            <g id="how-it-works" transform="translate(-1128.000000, 162.000000)">
+                <g id="4" transform="translate(2004.000000, 815.000000)">
+                    <g id="big-number-(gradient)">
+                        <text id="1">
+                            <tspan x="0" y="160">4</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

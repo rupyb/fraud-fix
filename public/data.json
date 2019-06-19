@@ -1,0 +1,176 @@
+[
+    {
+        "id": 1,
+        "meta": {
+            "previous_post": {
+                "slug": "example-post",
+                "title": "Example Post",
+                "featured_image": "https://d2devwt40at1e2.cloudfront.net/api/file/tdt3s1OHRO6wfQOpmAHw"
+            },
+            "next_post": null
+        },
+        "data": {
+            "created": "2019-06-06T17:26:39.453522Z",
+            "published": "2019-06-06T17:21:00Z",
+            "url": "here-is-a-blog-post",
+            "slug": "here-is-a-blog-post",
+            "featured_image": "https://cdn.buttercms.com/ZktZh0WR3Kr05a619i5w",
+            "author": {
+                "first_name": "Steven",
+                "last_name": "Weldler",
+                "email": "steven@cardcash.com",
+                "slug": "steven-weldler",
+                "bio": "Online marketing dude. Wearer of cool hats. VP of Marketing at @CardCash. Fishing in the hole of life. #DownWithBananas #SkypeKicksSlack",
+                "title": "VP Online Marketing",
+                "linkedin_url": "",
+                "facebook_url": "",
+                "instagram_url": "",
+                "pinterest_url": "",
+                "twitter_handle": "StevenWeldler",
+                "profile_image": "https://d1ts43dypk8bqh.cloudfront.net/v1/avatars/b03391cc-d82c-4caa-b16a-ba66d9ca8dba"
+            },
+            "tags": [
+                {
+                    "name": "Happiness",
+                    "slug": "happiness"
+                },
+                {
+                    "name": "Hate",
+                    "slug": "hate"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "Blog posts",
+                    "slug": "blog-posts"
+                },
+                {
+                    "name": "Weirdos",
+                    "slug": "weirdos"
+                }
+            ],
+            "title": "Here is a blog post",
+            "body": "<p>I don't know about you but I love blog posts.</p>\r\n<p><strong>Are they not the best?</strong></p>\r\n<p style=\"text-align: center;\">HAHA! Once I met someone who didn't like blog posts.</p>\r\n<p style=\"text-align: right;\">What a weirdo.</p>\r\n<p style=\"text-align: justify;\">Know what I did? I wrote a blog post about him. Totally killed him. Poor guy.</p>\r\n<h1 style=\"text-align: left;\">It went like this:</h1>\r\n<h4>Once there was a man who hated blog posts.</h4>\r\n<blockquote>\r\n<p><em>Like seriously hated blog posts</em></p>\r\n</blockquote>\r\n<p></p>\r\n<pre class=\"language-undefined\"><code>if(blogPosts == \"hate\"){\r\n  person = \"Weirdo\";\r\n}else{\r\n  person = \"Normal\";\r\n}</code></pre>\r\n<blockquote>\r\n<p>I mean, Google person who hates blog posts. Look what comes up in Image search:</p>\r\n<p><img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGGiM56hv3N36PZAMqfpQTtc4sjhWKWF9dFmO_hmRPy818LgGJkQ\" alt=\"Image result for person who hates blog posts\" /></p>\r\n<p>UUUUUUUUUUM. Clearly a weirdo.</p>\r\n</blockquote>\r\n<p style=\"text-align: left;\">Here is another picture:</p>\r\n<p style=\"text-align: left;\"><img src=\"https://cdn.buttercms.com/qC7M6ufYT2ugepMtSlEE\" alt=\"trump-i-hate-the-president-featured-i...\" /></p>\r\n<p style=\"text-align: left;\">Odd that this comes up. Must be big media's leftwing bias.</p>",
+            "summary": "Blog posts are good. Do not tell me otherwise.",
+            "seo_title": "Here is a blog post",
+            "meta_description": "I don't know about you but I love blog posts. Are they not the best? HAHA! Once I met someone who didn't like blog posts. What a weirdo. Kno",
+            "status": "draft"
+        }
+    },
+    {
+        "id": 2,
+        "meta": {
+            "previous_post": {
+                "slug": "example-post",
+                "title": "Example Post",
+                "featured_image": "https://d2devwt40at1e2.cloudfront.net/api/file/tdt3s1OHRO6wfQOpmAHw"
+            },
+            "next_post": null
+        },
+        "data": {
+            "created": "2019-06-06T17:26:39.453522Z",
+            "published": "2019-06-06T17:21:00Z",
+            "url": "here-is-a-blog-post",
+            "slug": "here-is-a-blog-post",
+            "featured_image": "https://cdn.buttercms.com/ZktZh0WR3Kr05a619i5w",
+            "author": {
+                "first_name": "Steven",
+                "last_name": "Weldler",
+                "email": "steven@cardcash.com",
+                "slug": "steven-weldler",
+                "bio": "Online marketing dude. Wearer of cool hats. VP of Marketing at @CardCash. Fishing in the hole of life. #DownWithBananas #SkypeKicksSlack",
+                "title": "VP Online Marketing",
+                "linkedin_url": "",
+                "facebook_url": "",
+                "instagram_url": "",
+                "pinterest_url": "",
+                "twitter_handle": "StevenWeldler",
+                "profile_image": "https://d1ts43dypk8bqh.cloudfront.net/v1/avatars/b03391cc-d82c-4caa-b16a-ba66d9ca8dba"
+            },
+            "tags": [
+                {
+                    "name": "Happiness",
+                    "slug": "happiness"
+                },
+                {
+                    "name": "Hate",
+                    "slug": "hate"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "Blog posts",
+                    "slug": "blog-posts"
+                },
+                {
+                    "name": "Weirdos",
+                    "slug": "weirdos"
+                }
+            ],
+            "title": "Here is a blog post",
+            "body": "<p>I don't know about you but I love blog posts.</p>\r\n<p><strong>Are they not the best?</strong></p>\r\n<p style=\"text-align: center;\">HAHA! Once I met someone who didn't like blog posts.</p>\r\n<p style=\"text-align: right;\">What a weirdo.</p>\r\n<p style=\"text-align: justify;\">Know what I did? I wrote a blog post about him. Totally killed him. Poor guy.</p>\r\n<h1 style=\"text-align: left;\">It went like this:</h1>\r\n<h4>Once there was a man who hated blog posts.</h4>\r\n<blockquote>\r\n<p><em>Like seriously hated blog posts</em></p>\r\n</blockquote>\r\n<p></p>\r\n<pre class=\"language-undefined\"><code>if(blogPosts == \"hate\"){\r\n  person = \"Weirdo\";\r\n}else{\r\n  person = \"Normal\";\r\n}</code></pre>\r\n<blockquote>\r\n<p>I mean, Google person who hates blog posts. Look what comes up in Image search:</p>\r\n<p><img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGGiM56hv3N36PZAMqfpQTtc4sjhWKWF9dFmO_hmRPy818LgGJkQ\" alt=\"Image result for person who hates blog posts\" /></p>\r\n<p>UUUUUUUUUUM. Clearly a weirdo.</p>\r\n</blockquote>\r\n<p style=\"text-align: left;\">Here is another picture:</p>\r\n<p style=\"text-align: left;\"><img src=\"https://cdn.buttercms.com/qC7M6ufYT2ugepMtSlEE\" alt=\"trump-i-hate-the-president-featured-i...\" /></p>\r\n<p style=\"text-align: left;\">Odd that this comes up. Must be big media's leftwing bias.</p>",
+            "summary": "Blog posts are good. Do not tell me otherwise.",
+            "seo_title": "Here is a blog post",
+            "meta_description": "I don't know about you but I love blog posts. Are they not the best? HAHA! Once I met someone who didn't like blog posts. What a weirdo. Kno",
+            "status": "draft"
+        }
+    },
+    {
+        "id": 3,
+        "meta": {
+            "previous_post": {
+                "slug": "example-post",
+                "title": "Example Post",
+                "featured_image": "https://d2devwt40at1e2.cloudfront.net/api/file/tdt3s1OHRO6wfQOpmAHw"
+            },
+            "next_post": null
+        },
+        "data": {
+            "created": "2019-06-06T17:26:39.453522Z",
+            "published": "2019-06-06T17:21:00Z",
+            "url": "here-is-a-blog-post",
+            "slug": "here-is-a-blog-post",
+            "featured_image": "https://cdn.buttercms.com/ZktZh0WR3Kr05a619i5w",
+            "author": {
+                "first_name": "Steven",
+                "last_name": "Weldler",
+                "email": "steven@cardcash.com",
+                "slug": "steven-weldler",
+                "bio": "Online marketing dude. Wearer of cool hats. VP of Marketing at @CardCash. Fishing in the hole of life. #DownWithBananas #SkypeKicksSlack",
+                "title": "VP Online Marketing",
+                "linkedin_url": "",
+                "facebook_url": "",
+                "instagram_url": "",
+                "pinterest_url": "",
+                "twitter_handle": "StevenWeldler",
+                "profile_image": "https://d1ts43dypk8bqh.cloudfront.net/v1/avatars/b03391cc-d82c-4caa-b16a-ba66d9ca8dba"
+            },
+            "tags": [
+                {
+                    "name": "Happiness",
+                    "slug": "happiness"
+                },
+                {
+                    "name": "Hate",
+                    "slug": "hate"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "Blog posts",
+                    "slug": "blog-posts"
+                },
+                {
+                    "name": "Weirdos",
+                    "slug": "weirdos"
+                }
+            ],
+            "title": "Here is a blog post",
+            "body": "<p>I don't know about you but I love blog posts.</p>\r\n<p><strong>Are they not the best?</strong></p>\r\n<p style=\"text-align: center;\">HAHA! Once I met someone who didn't like blog posts.</p>\r\n<p style=\"text-align: right;\">What a weirdo.</p>\r\n<p style=\"text-align: justify;\">Know what I did? I wrote a blog post about him. Totally killed him. Poor guy.</p>\r\n<h1 style=\"text-align: left;\">It went like this:</h1>\r\n<h4>Once there was a man who hated blog posts.</h4>\r\n<blockquote>\r\n<p><em>Like seriously hated blog posts</em></p>\r\n</blockquote>\r\n<p></p>\r\n<pre class=\"language-undefined\"><code>if(blogPosts == \"hate\"){\r\n  person = \"Weirdo\";\r\n}else{\r\n  person = \"Normal\";\r\n}</code></pre>\r\n<blockquote>\r\n<p>I mean, Google person who hates blog posts. Look what comes up in Image search:</p>\r\n<p><img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGGiM56hv3N36PZAMqfpQTtc4sjhWKWF9dFmO_hmRPy818LgGJkQ\" alt=\"Image result for person who hates blog posts\" /></p>\r\n<p>UUUUUUUUUUM. Clearly a weirdo.</p>\r\n</blockquote>\r\n<p style=\"text-align: left;\">Here is another picture:</p>\r\n<p style=\"text-align: left;\"><img src=\"https://cdn.buttercms.com/qC7M6ufYT2ugepMtSlEE\" alt=\"trump-i-hate-the-president-featured-i...\" /></p>\r\n<p style=\"text-align: left;\">Odd that this comes up. Must be big media's leftwing bias.</p>",
+            "summary": "Blog posts are good. Do not tell me otherwise.",
+            "seo_title": "Here is a blog post",
+            "meta_description": "I don't know about you but I love blog posts. Are they not the best? HAHA! Once I met someone who didn't like blog posts. What a weirdo. Kno",
+            "status": "draft"
+        }
+    }
+]
