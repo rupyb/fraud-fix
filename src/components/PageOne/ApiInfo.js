@@ -162,7 +162,7 @@ export default () => {
                             <img src={yellowCircle} alt="" className={classes.images} />
                             <div>
                                 <p className={classes.apiP  + ' apiP'}>
-                                 100's of data points are captured about every order
+                                 100's of data points captured on every order
                             </p>
                             </div>
                         </div>
