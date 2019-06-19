@@ -214,7 +214,8 @@ class Navbar extends Component {
                 onKeyDown={() => this.toggleDrawer(false)}>
                 <ul className={classes.linkColor}>
                     <li className={classes.listClass}>
-                        <a className={classes.linkColor + ' linkMobile ' + classes.aLink}
+                        <a style={{display: 'none'}}  
+                        className={classes.linkColor + ' linkMobile ' + classes.aLink}
                             href="https://cardprober.net/Portal/Account/Login.aspx?ReturnUrl=%2fportal">Login</a>
                     </li>
                     {menu.map((item, index) => {
@@ -260,7 +261,8 @@ class Navbar extends Component {
                     <nav className={classes.navLinkList + ' ' + classes.listStyle + ' navbarMenuList'}>
                         <ul className={classes.navLinkListSecond + ' navbarUl'}>
                             <li className={classes.theLink + ' ' + classes.listStyle + ' ' + classes.listGrid}>
-                                <a href="https://cardprober.net/Portal/Account/Login.aspx?ReturnUrl=%2fportal" className={classes.navLinkWords}>Login</a>
+                                <a style={{visibility: 'hidden'}} 
+                                href="https://cardprober.net/Portal/Account/Login.aspx?ReturnUrl=%2fportal" className={classes.navLinkWords}>Login</a>
                             </li>
                             <li className={classes.theLink + ' ' + classes.listStyle + ' ' + classes.listGrid}>
                                 <RouterLink to="/howitworks" className={classes.navLinkWords}>How it works</RouterLink>

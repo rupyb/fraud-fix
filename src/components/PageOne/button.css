@@ -25,6 +25,13 @@
     animation-duration: 5s;
     /* width: '279px', */
 }
+
+.theMediumSlideInput  {
+    z-index: -1;
+    animation-name: mediumslideinput;
+    animation-duration: 5s;
+    /* width: '279px', */
+}
 /* @keyframes slideButton {
     
    
@@ -66,6 +73,24 @@
     100% {
         z-index: -1;
         width:270px; 
+    }
+  }
+  @keyframes mediumslideinput {
+      
+    0% {
+        z-index: -1;
+        width:290px; 
+    }
+    
+    50% {
+        z-index: -1;
+        width:0px; 
+        
+    }
+
+    100% {
+        z-index: -1;
+        width:290px; 
     }
   }
   @keyframes slideinput {

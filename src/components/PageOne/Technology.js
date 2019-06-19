@@ -152,7 +152,7 @@ class Technology extends Component {
             {
                 id: 1,
                 header: 'Filter',
-                text: 'You can easily export your data and quickly export the results to Excel. Filter by specific SiteNames, Chargeback Entry Date vs Order Submission Date, Domestic vs International, MOTO (phone orders) vs Internet Orders',
+                text: 'You can easily filter by specific SiteNames, Chargeback Entry Date, Order Submission Date, Domestic and International, MOTO (phone orders) and Internet Orders.',
                 dashboard: hover1,
                 green: green1,
                 purple: purple1,
@@ -160,7 +160,7 @@ class Technology extends Component {
             {
                 id: 2,
                 header: 'Site Performance',
-                text: 'Site Performance: A quick snapshot of a website’s performance including Friendly Fraud Chargeback Data, Unique Customers Data, Repeat Customers Data & more',
+                text: 'Site Performance: A quick snapshot of your website’s performance, including Friendly Fraud Chargeback Data, Unique Customers Data, Repeat Customers Data & more.',
                 dashboard: hover2,
                 green: green2,
                 purple: purple2
@@ -168,7 +168,7 @@ class Technology extends Component {
             {
                 id: 3,
                 header: 'Statuses',
-                text: 'Snapshot and graphs of all resolution statuses',
+                text: 'Snapshot view of all your orders, broken down by order statuses, including approved, declined, and fraud.',
                 dashboard: hover3,
                 green: green3,
                 purple: purple3
@@ -176,7 +176,7 @@ class Technology extends Component {
             {
                 id: 4,
                 header: 'Totals submitted',
-                text: 'Total Number Of Orders submitted With its yearly sales comparisons, the information is also a great tool for CFOs and marketing departments.',
+                text: 'Track your total number of orders submitted with year by year sales comparisons.',
                 dashboard: hover4,
                 green: green4,
                 purple: purple4
@@ -184,7 +184,7 @@ class Technology extends Component {
             {
                 id: 5,
                 header: 'Declined vs Fraud',
-                text: 'Helps the merchants monitor the decline rate while observing the relative fraud attempts rate',
+                text: "Graphical overview to help you monitor the declined orders relative to the fraud attempts.",
                 dashboard: hover5,
                 green: green5,
                 purple: purple5
@@ -270,9 +270,9 @@ class Technology extends Component {
                             <h3 className={classes.h3}>Technology</h3>
                             <div className={classes.line}></div>
                             <p className={classes.firstP + ' pageOneTechnologyP'}>
-                                Our advanced AI Algorithms and Machine learning create and improve custom fraud
+                                Our advanced AI algorithms and machine learning create and improve custom fraud
 
-                                rules tailored for your business including Device Fingerprinting technology,
+                                rules tailored for your business, including device fingerprinting technology,
 
                                 proxy piercing & detection.
                             </p>

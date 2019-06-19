@@ -5,10 +5,10 @@ import big1 from '../../assets/illustration/bigNumbers/big1.svg';
 import big2 from '../../assets/illustration/bigNumbers/big2.svg';
 import big3 from '../../assets/illustration/bigNumbers/big3.svg';
 import big4 from '../../assets/illustration/bigNumbers/big4.svg';
-import pictogram1 from '../../assets/illustration/pictogram/pictogram1.svg';
-import pictogram2 from '../../assets/illustration/pictogram/pictogram2.svg';
-import pictogram3 from '../../assets/illustration/pictogram/pictogram3.svg';
-import pictogram4 from '../../assets/illustration/pictogram/pictogram4.svg';
+import pictogram1 from '../../assets/illustration/pictogram/picto1.svg';
+import pictogram2 from '../../assets/illustration/pictogram/picto2.svg';
+import pictogram3 from '../../assets/illustration/pictogram/picto3.svg';
+import pictogram4 from '../../assets/illustration/pictogram/picto4.svg';
 
 const styles = {
     content: {
@@ -41,13 +41,15 @@ const styles = {
         backgroundColor: 'white',
         fontFamily: 'Barlow',
         backgroundImage: `url(${howItWorksPageBackground})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
         paddingTop: '45px',
         paddingBottom: '7em'
     },
     grid2: {
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
-        backgroundColor: 'rgba(219, 214, 233, 0.5)',
+        backgroundColor: 'transparent',
         gridGap: '2px'
     },
     line: {
@@ -67,9 +69,11 @@ const styles = {
         display: 'grid',
         gridTemplateColumns: '25% 75%',
         alignItems: 'baseline',
-        backgroundColor: 'white',
+        //backgroundColor: 'white',
         paddingTop: '55px',
-        paddingLeft: '30px'
+        paddingLeft: '30px',
+        paddingRight: '40px',
+        paddingBottom: '50px'
     },
     numberImage: {
         paddingBottom: '16px'
@@ -78,6 +82,11 @@ const styles = {
         fontSize: '12px',
         lineHeight: 1.63,
         color: '#7c768a'
+    },
+    smallP: {
+        fontSize: '24px',
+        fontWeight: 500,
+        paddingTop: '20px'
     }
 };
 
@@ -93,6 +102,8 @@ class HowItWorks extends Component {
                         display: 'grid',
                         gridTemplateColumns: '15% 70% 15%',
                         backgroundImage: `url('bg.png')`, color: 'white',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundSize: 'cover',
                         paddingTop: '10em',
                         paddingBottom: '6em'
                     }}>
@@ -104,8 +115,9 @@ class HowItWorks extends Component {
                                 <h2 className={classes.contentH2}>How it works</h2>
                                 <div className={classes.line}></div>
                             </div>
-                            <p className={classes.contentP}>We use customized and automated solutions for eCommerce and MOTO fraud prevention, 
-                            with smooth integration for any platform.
+                            <p className={classes.contentP}>FraudFix offers a smooth, automated verification 
+                            process with exceptionally high transaction approval rates. Increasing approval rates ultimately drives your company’s revenue 
+                            forward, because more approvals means more money!
                             </p>
                         </div>
 
@@ -121,22 +133,22 @@ class HowItWorks extends Component {
                             <img src={pictogram1} alt="" className={classes.pictogram} />
 
                             <div></div>
-                            <p>Snippet of code placed on page</p>
+                            <p className={classes.smallP}>Send your orders to our API</p>
 
                         </div>
                         <div className={classes.contentRow}>
                             <img src={big2} alt="" className={classes.numberImage} />
                             <img src={pictogram2} alt="" className={classes.pictogram} />
                             <div></div>
-                            <p>Over 100 points of data is captured about every customer</p>
+                            <p className={classes.smallP}>We analyze hundreds of data points for every order</p>
                         </div>
                         <div className={classes.contentRow}>
                             <img src={big3} alt="" className={classes.numberImage} />
                             <img src={pictogram3} alt="" className={classes.pictogram} />
                             <div></div>
                             <div>
-                                <p>Once order is placed, FraudFix returns a score of either:</p>
-                                <p className={classes.lightP}>Safe, Allowed, Unsafe, Fraud</p>
+                                <p className={classes.smallP}>Fraudfix’s advanced Algorithms return a score of safe, unsafe, allowed or fraud</p>
+                               
                             </div>
 
                         </div>
@@ -144,7 +156,7 @@ class HowItWorks extends Component {
                             <img src={big4} alt="" className={classes.numberImage} />
                             <img src={pictogram4} alt="" className={classes.pictogram} />
                             <div></div>
-                            <p>Automatic rejections or acceptance covers most levels, some may be flagged for manual review by customer</p>
+                            <p className={classes.smallP}>You gain the confidence to accept and reject orders, and maximize your profits with an approval rating of up to 98.5%</p>
                         </div>
                     </div>
                     <div></div>

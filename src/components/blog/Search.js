@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/styles';
+import searchIcon from '../../assets/illustration/icon/search.svg';
 
 const styles = {
     searchDiv: {
@@ -18,16 +19,20 @@ const styles = {
     },
     input: {
         borderRadius: '36px',
-        backgroundImage: 'linear-gradient(156deg, rgba(151, 20, 244, 0.5), rgba(151, 20, 244, 0.49) 27%, rgba(96, 0, 164, 0))',
+        backgroundColor: 'rgba(47, 34, 85, 0.5)',
         height: '51px',
         border: 'none',
         outline: 'none !important',
         margin: '0 auto',
-        paddingLeft: '10px',
-        width: '100%'
+        paddingLeft: '16px',
+        width: '100%',
+        color: '#afa6c5'
     },
     unCenterDiv: {
         textAlign: 'left'
+    },
+    imageIcon: {
+        marginLeft: '-45px'
     }
 };
 
@@ -58,6 +63,7 @@ class Search extends Component {
                     <div >
                         <input type="text" placeholder="Keyword" className={classes.input} size="30"
                             onChange={this.handleChange} value={this.state.search} />
+                            <img className={classes.imageIcon} src={searchIcon} alt=""/>
                     </div>
                 </div>
                 <div></div>

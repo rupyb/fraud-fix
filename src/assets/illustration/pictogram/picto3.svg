@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="76px" height="59px" viewBox="0 0 76 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>pictogram / pictogram 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.997 0.997 59 0.997 59 58.9995 0.997 58.9995"></polygon>
+        <polygon id="path-3" points="16 58.0034 77 58.0034 77 0.0004 16 0.0004"></polygon>
+    </defs>
+    <g id="💵-Fraudfix" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="How-it-works" transform="translate(-374.000000, -1100.000000)">
+            <g id="how-it-works" transform="translate(-1128.000000, 162.000000)">
+                <g id="3" transform="translate(1428.000000, 816.000000)">
+                    <g id="pictogram-/-pictogram-3" transform="translate(71.000000, 112.000000)">
+                        <g id="icon" transform="translate(2.000000, 2.000000)">
+                            <g id="Group-3" transform="translate(0.000000, 16.003400)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="Clip-2"></g>
+                                <path d="M50.997,25.996931 C50.997,39.8039755 39.8044755,50.9965 25.996569,50.9965 C12.1895245,50.9965 0.997,39.8039755 0.997,25.996931 C0.997,12.1890245 12.1895245,0.9965 25.997431,0.9965 C39.8044755,0.9965 50.997,12.1890245 50.997,25.996931" id="Fill-1" fill="#9714F4" mask="url(#mask-2)"></path>
+                            </g>
+                            <path d="M75,9.0034 L18,9.0034 C17.447,9.0034 17,9.4514 17,10.0034 L17,48.0034 C17,48.5554 17.447,49.0034 18,49.0034 L75,49.0034 C75.553,49.0034 76,48.5554 76,48.0034 L76,10.0034 C76,9.4514 75.553,9.0034 75,9.0034" id="Fill-4" fill="#FFFFFF"></path>
+                            <path d="M76,15.0034 L76,10.0034 C76,9.4514 75.553,9.0034 75,9.0034 L18,9.0034 C17.447,9.0034 17,9.4514 17,10.0034 L17,15.0034 L76,15.0034 Z" id="Fill-6" fill="#3CDC7C"></path>
+                            <path d="M75,9.0034 L18,9.0034 C17.447,9.0034 17,9.4514 17,10.0034 L17,48.0034 C17,48.5554 17.447,49.0034 18,49.0034 L75,49.0034 C75.553,49.0034 76,48.5554 76,48.0034 L76,10.0034 C76,9.4514 75.553,9.0034 75,9.0034 Z" id="Stroke-8" stroke="#11062F" stroke-width="2"></path>
+                            <path d="M19,15.0034 L74,15.0034" id="Stroke-10" stroke="#11062F" stroke-width="2"></path>
+                            <path d="M20,12.0034 L22,12.0034" id="Stroke-12" stroke="#11062F" stroke-width="2"></path>
+                            <path d="M24,12.0034 L26,12.0034" id="Stroke-14" stroke="#11062F" stroke-width="2"></path>
+                            <path d="M28,12.0034 L30,12.0034" id="Stroke-16" stroke="#11062F" stroke-width="2"></path>
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <g id="Clip-19"></g>
+                            <polygon id="Fill-18" fill="#FFFFFF" mask="url(#mask-4)" points="50.095 41.0034 67.994 41.0034 67.994 23.0034 50.095 23.0034"></polygon>
+                            <polygon id="Stroke-20" stroke="#11062F" stroke-width="2" mask="url(#mask-4)" points="50.095 41.0034 67.994 41.0034 67.994 23.0034 50.095 23.0034"></polygon>
+                            <polygon id="Fill-21" fill="#FFFFFF" mask="url(#mask-4)" points="25 41.0034 43 41.0034 43 23.0034 25 23.0034"></polygon>
+                            <polygon id="Stroke-22" stroke="#11062F" stroke-width="2" mask="url(#mask-4)" points="25 41.0034 43 41.0034 43 23.0034 25 23.0034"></polygon>
+                            <path d="M55,28.0034 L63,36.0034" id="Stroke-23" stroke="#9714F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-4)"></path>
+                            <path d="M63,28.0034 L55,36.0034" id="Stroke-24" stroke="#9714F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-4)"></path>
+                            <polyline id="Stroke-25" stroke="#3CDC7C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-4)" points="39 28.0034 32.733 35.9894 30 32.0034"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

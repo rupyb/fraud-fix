@@ -33,10 +33,10 @@ export default class PageOne extends Component {
               <WhatWeDo />
               <Technology />
               <ApiInfo />
-              <HowItWorks />
+              {/* <HowItWorks /> */}
             </div>
         
-        }
+        
       </div>
     );
   }

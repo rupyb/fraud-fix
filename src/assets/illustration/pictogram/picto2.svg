@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="73px" viewBox="0 0 64 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>pictogram / pictogram 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="92.1789085%" y1="7.82109148%" x2="6.47874666%" y2="93.5212533%" id="linearGradient-1">
+            <stop stop-color="#F3F6B5" offset="0%"></stop>
+            <stop stop-color="#E6ED4A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="💵-Fraudfix" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="How-it-works" transform="translate(-962.000000, -745.000000)">
+            <g id="how-it-works" transform="translate(-1128.000000, 162.000000)">
+                <g id="2" transform="translate(2004.000000, 477.000000)">
+                    <g id="pictogram-/-pictogram-2" transform="translate(78.000000, 102.000000)">
+                        <g id="icon" transform="translate(9.000000, 4.000000)">
+                            <path d="M63,25 C63,38.807 51.807,50 38,50 C24.193,50 13,38.807 13,25 C13,11.193 24.193,0 38,0 C51.807,0 63,11.193 63,25" id="Fill-1" fill="url(#linearGradient-1)"></path>
+                            <path d="M25,64 L25,22" id="Stroke-3" stroke="#11062F" stroke-width="2"></path>
+                            <path d="M43.1865,32.5 L6.8135,53.5" id="Stroke-5" stroke="#11062F" stroke-width="2"></path>
+                            <path d="M6.8135,32.5 L43.1865,53.5" id="Stroke-7" stroke="#11062F" stroke-width="2"></path>
+                            <path d="M41,43.001 C41,51.837 33.836,59 25,59 C16.164,59 9,51.837 9,43 C9,34.163 16.164,27 25,27 C33.836,27 41,34.164 41,43.001" id="Fill-9" fill="#FFFFFF"></path>
+                            <path d="M41,43.001 C41,51.837 33.836,59 25,59 C16.164,59 9,51.837 9,43 C9,34.163 16.164,27 25,27 C33.836,27 41,34.164 41,43.001 Z" id="Stroke-11" stroke="#11062F" stroke-width="2"></path>
+                            <path d="M11,26 L18,22" id="Stroke-13" stroke="#11062F" stroke-width="2"></path>
+                            <path d="M4,49 L4,37" id="Stroke-15" stroke="#11062F" stroke-width="2"></path>
+                            <path d="M18,64 L11,60" id="Stroke-17" stroke="#11062F" stroke-width="2"></path>
+                            <path d="M39,60 L32,64" id="Stroke-19" stroke="#11062F" stroke-width="2"></path>
+                            <path d="M46,37 L46,49" id="Stroke-21" stroke="#11062F" stroke-width="2"></path>
+                            <path d="M32,22 L39,26" id="Stroke-23" stroke="#11062F" stroke-width="2"></path>
+                            <path d="M25,46 C22.041,46 16,46.873 16,50 L16,52 C18.434,54.046 21.571,55.283 25,55.283 C28.429,55.283 31.566,54.046 34,52 L34,50 C34,46.873 27.959,46 25,46" id="Fill-25" fill="#9714F4"></path>
+                            <path d="M25,42 C27.206,42 29,40.272 29,38.143 L29,35.856 C29,33.727 27.206,32 25,32 C22.793,32 21,33.727 21,35.856 L21,38.143 C21,40.273 22.793,42 25,42" id="Fill-27" fill="#FFFFFF"></path>
+                            <path d="M25,42 C27.206,42 29,40.272 29,38.143 L29,35.856 C29,33.727 27.206,32 25,32 C22.793,32 21,33.727 21,35.856 L21,38.143 C21,40.273 22.793,42 25,42 Z" id="Stroke-29" stroke="#11062F" stroke-width="2"></path>
+                            <path d="M34,52 L34,50 C34,46.873 27.959,46 25,46 C22.041,46 16,46.873 16,50 L16,52" id="Stroke-31" stroke="#11062F" stroke-width="2"></path>
+                            <path d="M29,18 C29,20.209 27.209,22 25,22 C22.791,22 21,20.209 21,18 C21,15.791 22.791,14 25,14 C27.209,14 29,15.791 29,18" id="Fill-33" fill="#FFFFFF"></path>
+                            <path d="M29,18 C29,20.209 27.209,22 25,22 C22.791,22 21,20.209 21,18 C21,15.791 22.791,14 25,14 C27.209,14 29,15.791 29,18 Z" id="Stroke-35" stroke="#11062F" stroke-width="2"></path>
+                            <path d="M50,30 C50,32.209 48.209,34 46,34 C43.791,34 42,32.209 42,30 C42,27.791 43.791,26 46,26 C48.209,26 50,27.791 50,30" id="Fill-37" fill="#FFFFFF"></path>
+                            <path d="M50,30 C50,32.209 48.209,34 46,34 C43.791,34 42,32.209 42,30 C42,27.791 43.791,26 46,26 C48.209,26 50,27.791 50,30 Z" id="Stroke-39" stroke="#11062F" stroke-width="2"></path>
+                            <path d="M50,56 C50,58.209 48.209,60 46,60 C43.791,60 42,58.209 42,56 C42,53.791 43.791,52 46,52 C48.209,52 50,53.791 50,56" id="Fill-41" fill="#FFFFFF"></path>
+                            <path d="M50,56 C50,58.209 48.209,60 46,60 C43.791,60 42,58.209 42,56 C42,53.791 43.791,52 46,52 C48.209,52 50,53.791 50,56 Z" id="Stroke-43" stroke="#11062F" stroke-width="2"></path>
+                            <path d="M8,56 C8,58.209 6.209,60 4,60 C1.791,60 0,58.209 0,56 C0,53.791 1.791,52 4,52 C6.209,52 8,53.791 8,56" id="Fill-45" fill="#FFFFFF"></path>
+                            <path d="M8,56 C8,58.209 6.209,60 4,60 C1.791,60 0,58.209 0,56 C0,53.791 1.791,52 4,52 C6.209,52 8,53.791 8,56 Z" id="Stroke-47" stroke="#11062F" stroke-width="2"></path>
+                            <path d="M8,30 C8,32.209 6.209,34 4,34 C1.791,34 0,32.209 0,30 C0,27.791 1.791,26 4,26 C6.209,26 8,27.791 8,30" id="Fill-49" fill="#FFFFFF"></path>
+                            <path d="M8,30 C8,32.209 6.209,34 4,34 C1.791,34 0,32.209 0,30 C0,27.791 1.791,26 4,26 C6.209,26 8,27.791 8,30 Z" id="Stroke-51" stroke="#11062F" stroke-width="2"></path>
+                            <g id="Group-56" transform="translate(21.000000, 64.000000)">
+                                <path d="M4,8 C1.791,8 0,6.209 0,4 C0,1.791 1.791,0 4,0 C6.209,0 8,1.791 8,4 C8,6.209 6.209,8 4,8" id="Fill-53" fill="#FFFFFF"></path>
+                                <path d="M4,8 C1.791,8 0,6.209 0,4 C0,1.791 1.791,0 4,0 C6.209,0 8,1.791 8,4 C8,6.209 6.209,8 4,8" id="Stroke-55" stroke="#11062F" stroke-width="2"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

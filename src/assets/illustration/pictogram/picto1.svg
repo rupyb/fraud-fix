@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="73px" height="71px" viewBox="0 0 73 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>pictogram / pictogram 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="3.5865623%" y2="96.4134377%" id="linearGradient-1">
+            <stop stop-color="#95EBB1" offset="0%"></stop>
+            <stop stop-color="#3CDC7C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="💵-Fraudfix" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="How-it-works" transform="translate(-380.000000, -745.000000)">
+            <g id="how-it-works" transform="translate(-1128.000000, 162.000000)">
+                <g id="1" transform="translate(1428.000000, 477.000000)">
+                    <g id="pictogram-/-pictogram-1" transform="translate(76.000000, 101.000000)">
+                        <g id="icon" transform="translate(4.000000, 5.000000)">
+                            <path d="M50.0003,25.0004 C50.0003,38.808073 38.807973,50.0004 25.0003,50.0004 C11.192627,50.0004 0.0003,38.808073 0.0003,25.0004 C0.0003,11.192727 11.192627,0.0004 25.0003,0.0004 C38.807973,0.0004 50.0003,11.192727 50.0003,25.0004" id="Fill-1" fill="url(#linearGradient-1)"></path>
+                            <path d="M65.0092,29 L20.0092,29 C18.9052,29 18.0092,29.896 18.0092,31 L18.0092,62 L67.0092,62 L67.0092,31 C67.0092,29.896 66.1132,29 65.0092,29" id="Fill-3" fill="#FFFFFF"></path>
+                            <path d="M18.0092,61 L18.0092,31 C18.0092,29.896 18.9052,29 20.0092,29 L65.0092,29 C66.1132,29 67.0092,29.896 67.0092,31 L67.0092,61" id="Stroke-5" stroke="#11062F" stroke-width="2"></path>
+                            <path d="M71.0092,19 L71.0092,43.051 C71.0092,44.68 69.6892,46 68.0602,46 L49.8832,46 L41.7952,53.732 C41.2082,54.478 40.0092,54.063 40.0092,53.113 L40.0092,46 L35.0262,46 C33.3662,46 32.0092,44.643 32.0092,42.983 L32.0092,19 C32.0092,17.343 33.3522,16 35.0092,16 L68.0092,16 C69.6662,16 71.0092,17.343 71.0092,19" id="Fill-7" fill="#EDE9FA"></path>
+                            <path d="M71.0092,19 L71.0092,43.051 C71.0092,44.68 69.6892,46 68.0602,46 L49.8832,46 L41.7952,53.732 C41.2082,54.478 40.0092,54.063 40.0092,53.113 L40.0092,46 L35.0262,46 C33.3662,46 32.0092,44.643 32.0092,42.983 L32.0092,19 C32.0092,17.343 33.3522,16 35.0092,16 L68.0092,16 C69.6662,16 71.0092,17.343 71.0092,19 Z" id="Stroke-9" stroke="#11062F" stroke-width="2" fill="#FFFFFF"></path>
+                            <polyline id="Stroke-11" stroke="#3CDC7C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="47.0092 31 51.0092 35 60.0092 24"></polyline>
+                            <polyline id="Stroke-13" stroke="#11062F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="59.0092 31 59.0092 39 42.9222 39 42.9222 23 56.0092 23"></polyline>
+                            <path d="M14.0092,32 L14.0092,31 C14.0092,27.687 16.6962,25 20.0092,25 L29.0092,25" id="Stroke-15" stroke="#11062F" stroke-width="2"></path>
+                            <path d="M71.0092,61 L49.0092,61 L48.0092,62 L36.0092,62 L35.0092,61 L13.0092,61 L13.0092,63 C13.0092,64.65 14.3592,66 16.0092,66 L68.0092,66 C69.6662,66 71.0092,64.657 71.0092,63 L71.0092,61 Z" id="Fill-17" fill="#FFFFFF"></path>
+                            <path d="M71.0092,61 L49.0092,61 L48.0092,62 L36.0092,62 L35.0092,61 L13.0092,61 L13.0092,63 C13.0092,64.65 14.3592,66 16.0092,66 L68.0092,66 C69.6662,66 71.0092,64.657 71.0092,63 L71.0092,61 Z" id="Stroke-19" stroke="#11062F" stroke-width="2"></path>
+                            <path d="M23.0092,70 L39.0092,70" id="Stroke-21" stroke="#11062F" stroke-width="2"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

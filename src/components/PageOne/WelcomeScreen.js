@@ -39,13 +39,14 @@ const styles = {
         paddingLeft: '20px',
         zIndex: -1,
         width: '300px',
-        paddingRight: '21px'
+        paddingRight: '21px',
+        // marginRight: '25px'
     },
     buttonStyle: {
         backgroundImage: 'linear-gradient(to bottom, #8de1a8, #3cdc7c)',
         height: '50px',
         width: '118px',
-        marginLeft: '-36px',
+        marginLeft: '-22px',
         color: 'white',
         fontFamily: 'Barlow',
         fontWeight: 600,
@@ -91,28 +92,29 @@ class WelcomeScreen extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         if (!this.state.locked) {
+            this.setState({
+                activeButton: 'theSlideButton',
+                activeInput: window.innerWidth < 389 ? 'theMobileSlideInput' : window.innerWidth < 768 ? 'theMediumSlideInput':'theSlideInput',
+            });
             emailjs.sendForm('default_service', process.env.REACT_APP_EMAIL_TEMPLATE_ID, '#theInputForm', process.env.REACT_APP_EMAILJS_USER_ID)
                 .then((response) => {
-                    this.setState({
-                        activeButton: 'theSlideButton',
-                        activeInput: window.innerWidth < 389 ? 'theMobileSlideInput' : 'theSlideInput',
-                    });
+                    
                     setTimeout(() => {
                         this.setState({
-                            email: this.state.email.slice(0, 15),
-                            placeholder: ''
-                        });
-                    }, 500);
-                    setTimeout(() => {
-                        this.setState({
-                            placeholder: 'Thank you for your interest!',
-                            email: 'Thank you for your interest!',
+                            placeholder: 'Your message has been sent!',
+                            email: 'Your message has been sent!',
                             locked: true
                         });
-                    }, 3000);
+                    }, 2000);
                 }, (err) => {
+                    setTimeout(() => {
+                    this.setState({
+                        placeholder: 'Sorry please try again!',
+                        email: 'Sorry please try again!',
+                    });
                     console.log('FAILED...', err);
-                });
+                }, 2000);
+               });
         } 
     }
 

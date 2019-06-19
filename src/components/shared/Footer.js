@@ -62,7 +62,9 @@ const useStyles = makeStyles(theme => ({
     }
 }
 ));
-
+ const renderDate = () => {
+    return new Date().getFullYear();
+}
 export default () => {
     const classes = useStyles();
     return (
@@ -79,13 +81,13 @@ export default () => {
                         <a className="socialLogos" href="https://www.facebook.com/FraudFix-514485039382925/?modal=admin_todo_tour"><img src={facebook} alt=""/></a>
                         <a className="socialLogos" href="https://twitter.com/RealFraudFix"><img src={twitter} alt=""/></a>
                         <a className="socialLogos" href="https://www.instagram.com/realfraudfix/"><img src={instagram} alt=""/></a>
-                        <a className="socialLogos" href="https://www.linkedin.com"><img src={linkedin} alt=""/></a>
+                        <a className="socialLogos" href="https://www.linkedin.com/company/fraudfix-com/"><img src={linkedin} alt=""/></a>
                     </div>
                 </div>
 
                 <div className={classes.copyright + ' copyright'}>
                     <div>
-                        <p className={classes.copyrightP + ' copyrightP'}>Copyright &copy; 2019 by FraudFix. All rights reserved</p>
+                        <p className={classes.copyrightP + ' copyrightP'}>Copyright &copy; {renderDate()} by FraudFix. All rights reserved</p>
                     </div>
                     <div className={classes.copyrightFooter + ' copyrightFooter'}>
                         <div><NavLink to="/" className={classes.copyrightLink}>Homepage </NavLink></div>

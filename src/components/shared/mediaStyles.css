@@ -24,7 +24,9 @@
 
 
 @media only screen and (max-width: 1500px) {
-    
+    .pageOneApiInfo {
+        grid-template-columns: 5% 90% 5% !important;
+    }
     .divForImage {
         width: 100% !important;
     }
@@ -36,6 +38,10 @@
     .navbarUl {
         padding-left: 0 !important;
     }
+    .howItWorksPageGrid3 {
+        grid-template-columns: 15% 70% 15% !important;
+    }
+
 }
 
 @media only screen and (max-width: 1415px) {
@@ -50,6 +56,10 @@
 }
 
 @media only screen and (max-width: 1355px) {
+.aboutPageGrid3 {
+    grid-template-columns: 12% 76% 12% !important;
+}
+
    .navbar-grid {
        grid-template-columns: 40% 60% !important;
    }
@@ -139,6 +149,9 @@
   }
 
   @media only screen and (max-width: 1176px) {
+    .pageOneMainDiv {
+        grid-template-columns: 10% 80% 10% !important;
+    }
     .copyright {
         grid-template-columns: 45% 55% !important;
     }
@@ -200,8 +213,7 @@
         .blogMain,
         .pricingMain,
         .footerMain,
-        .navroot,
-        .pageOneMainDiv {
+        .navroot {
             grid-template-columns: 10% 80% 10% !important;
         }
         .pageOneH3Apis {
@@ -218,6 +230,16 @@
     .welcomeHeader {
         font-size: 50px !important;
         }
+
+        .aboutPageGrid3 {
+            grid-template-columns: 8% 84% 8% !important;
+        }    
+  }
+
+  @media only screen and (max-width: 1030px) {
+    .pageOneMainDiv {
+        grid-template-columns: 5% 90% 5% !important;
+    }
   }
 
   @media only screen and (max-width: 995px) {
@@ -326,6 +348,11 @@
     }
   }
 
+  @media only screen and (max-width: 918px) {
+    .gridMaster {
+        grid-template-columns: 1fr 0.7fr !important;
+    }
+  }
   @media only screen and (max-width: 848px) {
       .navbarUl {
         font-size: 15px !important;
@@ -457,8 +484,11 @@
         transform: translate( -50%, -50% );
     }
   }
-
-
+  @media only screen and (max-width: 786px) {
+    .gridMaster {
+        grid-template-columns: 1fr 0.6fr !important;
+    }
+  }
   @media only screen and (max-width: 774px) {
     .navbar-grid {
         padding-bottom: 24px;
@@ -503,10 +533,10 @@
   }
 
   @media only screen and (max-width: 768px) {
-    /* .blogItemMessageDiv {
-        top: 30% !important;
-        right: 37% !important;   
-    } */
+
+    .leftColumn input {
+        width: 290px !important;
+    }
   }
 
   @media only screen and (max-width: 738px) {
@@ -730,7 +760,9 @@
       .pricingChart {
           grid-template-columns: 1fr 1fr !important;
       }
-
+      .hideMobile {
+          display: none !important;
+      }
       .blogHeader {
         grid-template-columns: 1fr 0.5fr 1fr !important;
     }

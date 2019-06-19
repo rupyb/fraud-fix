@@ -27,6 +27,8 @@ const styles = {
     },
     mainContent: {
         backgroundImage: `url(${blogPatternBackground})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
         display: 'grid',
         gridTemplateColumns: '15% 70% 15%',
         paddingBottom: '120px'
@@ -213,6 +215,8 @@ class BlogItem extends Component {
                         display: 'grid',
                         gridTemplateColumns: '15% 70% 15%',
                         backgroundImage: `url('${window.location.origin}/bg.png')`, color: 'white',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundSize: 'cover',
                         paddingTop: '6em',
                         minHeight: '379px'
                     }}>

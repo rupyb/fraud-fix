@@ -18,7 +18,9 @@ const styles = {
         paddingTop: '6em',
         justifyItems: 'center',
         paddingBottom: '115px',
-        backgroundImage: `url(${Group2})`
+        backgroundImage: `url(${Group2})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover'
     },
     centerDiv: {
         display: 'grid',
@@ -83,7 +85,7 @@ const infoArray = [
         circle: smallGreenCircle
     },
     {
-        text: 'Stop choosing between declining good orders and preventing fraud. FraudFix can help you automate your approvals by as much as 98%, maximize profits without the cost of fraud.',
+        text: 'Stop choosing between declining good orders and preventing fraud. FraudFix can help you automate your approvals by as much as 98.5%, maximize profits without the cost of fraud.',
         title: 'Highest Approval rates',
         image: target,
         circle: smallPurpleCircle
@@ -101,7 +103,7 @@ const infoArray = [
         circle: smallGreenCircle
     },
     {
-        text: "Why should you pay us if we aren't stopping your fraud? any chargebacks you experience are deducted from our fee with our optional chargeback guarantee.",
+        text: "Why should you pay us if we aren't stopping your fraud? Any chargebacks you experience are deducted from our fee with our optional chargeback guarantee.",
         title: 'Chargeback Prevention Guarantee',
         image: shield,
         circle: smallPurpleCircle
@@ -169,7 +171,7 @@ class WhatWeDo extends Component {
                                 
                                     preventing fraud. FraudFix can help you automate your
                             
-                                    approvals by as much as 98%, maximize profits without
+                                    approvals by as much as 98.5%, maximize profits without
                                
                                     the cost of fraud.
                             </p>
@@ -236,7 +238,7 @@ class WhatWeDo extends Component {
                             <p className={classes.chargeBackP}>
                                 Why should you pay us if we aren't stopping your fraud?
                           
-                                any chargebacks you experience are deducted from our fee
+                                Any chargebacks you experience are deducted from our fee
                             
                                 with our optional chargeback guarantee.
                              </p>

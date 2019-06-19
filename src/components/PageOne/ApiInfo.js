@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import background from '../../assets/illustration/platforms.png';
 import magento from '../../assets/illustration/customerLogos/magento.svg';
@@ -13,7 +14,7 @@ const useStyles = makeStyles(theme => ({
     theDiv: {
         backgroundImage: `url(${background})`,
         backgroundRepeat: 'no-repeat',
-        backgroundSize: 'contain',
+        backgroundSize: 'cover',
         fontFamily: 'Barlow',
         display: 'grid',
         gridTemplateColumns: '15% 70% 15%',
@@ -128,7 +129,7 @@ export default () => {
                         </div>
                     </div>
                     <div style={{ textAlign: 'center' }}>
-                        <button className={classes.buttonStyle}>Our Software</button>
+                       <Link to="/howitworks"><button className={classes.buttonStyle}>How it works</button></Link> 
                     </div>
                     <div className={classes.centerDiv}>
                         <div className={classes.line}></div>
@@ -161,8 +162,7 @@ export default () => {
                             <img src={yellowCircle} alt="" className={classes.images} />
                             <div>
                                 <p className={classes.apiP  + ' apiP'}>
-                                    Hundreds of data
-                                    points
+                                 100's of data points are captured about every order
                             </p>
                             </div>
                         </div>

@@ -22,7 +22,9 @@ const styles = {
         fontSize: '1.2em',
         fontWeight: 'normal',
         paddingTop: '2em',
-        paddingBottom: '2.5em'
+        paddingBottom: '2.5em',
+        width: '90%',
+        margin: '0 auto'
     },
     chart: {
         backgroundColor: 'white',
@@ -83,6 +85,8 @@ const styles = {
         fontFamily: 'Barlow',
         paddingTop: '4em',
         backgroundImage: `url(${patternBackgroundPricing})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
         paddingBottom: '5em'
     },
     mainContentH3: {
@@ -178,18 +182,20 @@ class Pricing extends Component {
             },
 
         ],
-        services: ['Trusted, reliable decision engine, backed by 100% fraud guarantees.',
+        services: [
+            'Trusted, reliable decision engine, determines the score of every order.',
             'Automated Risk Rules Creator via Machine Learning and AI Algorithms.',
-            'Manual verification services tools, risk guage, itemized fraud risk factor reasons.',
-            'No per-query fees for automated email verification and Credit Bureau identity checks',
+            'Manual verification tools, risk gauge and itemized fraud risk factors.',
+            'No per-query fees for automated email verification and Credit Bureau identity checks.',
             'Fully managed services, expert setup, custom-tailored AI risk rules for your company.',
             'Credit Card Account Takeover Detection for MOTO/Mail-order Telephone Order.',
-            'Customer abuse list & white lists Managed services and account monitoring.',
+            'Customer abuse list & white lists, managed services and account monitoring.',
             'Investigative tools and use of third-party query services at no extra cost.',
-            'Information sharing network, carder detection, high-risk address detection.',
+            'Information sharing network, carder detection and high-risk address detection.',
             'Device Fingerprinting technology, proxy piercing & detection.',
             'Integrated-ready, two-factor SMS authentication. *Replaces phone calls*',
-            'Exportable graph reports. YOY sales, chargebacks, declines, approvals...']
+            'Exportable graph reports for, YOY sales, chargebacks, declines and approvals.'
+        ]
     }
 
     renderPrices = () => {
@@ -201,13 +207,13 @@ class Pricing extends Component {
                 <p className={classes.chartAmount}>{item.amount.toLocaleString()}+</p>
                 <p className={classes.chartOrder}>/ transactions per month</p>
                 <div className={classes.buttonDiv}>
-                   <Link to="/contact"><button className={classes.chartButton}>Sign up</button></Link> 
+                    <Link to="/contact"><button className={classes.chartButton}>Sign up</button></Link>
                 </div>
-                <div className={classes.checkDiv}>
+                {/* <div className={classes.checkDiv}>
                     <img className={classes.imageCheck} src={checkSymbol} alt="" />
-                </div>
+                </div> */}
 
-                <p className={classes.chartOrder}>optional fraud <br /> Guarantee <span className={classes.chartSpan}>{item.optionalFraud.toFixed(2)}</span>%</p>
+                <p className={classes.chartOrder}>Optional Fraud <br /> Guarantee <span className={classes.chartSpan}>{item.optionalFraud.toFixed(2)}</span>%</p>
             </div>
         )))
     }
@@ -234,6 +240,8 @@ class Pricing extends Component {
                         display: 'grid',
                         gridTemplateColumns: '15% 70% 15%',
                         backgroundImage: `url('bg.png')`,
+                        backgroundRepeat: 'no-repeat',
+                        backgroundSize: 'cover',
                         color: 'white',
                         paddingTop: '10em',
                         minHeight: '726px'
@@ -249,8 +257,8 @@ class Pricing extends Component {
 
                             <p className={classes.contentP}>
                                 Every client is unique - and at FraudFix, we offer tailored solutions for every set of needs.
-                            
-                                our custom-tailored setups, adjustments and performance monitoring for each account is included in our pricing.
+                                Our custom-tailored setups, adjustments and performance monitoring for each account is included 
+                                in our pricing.
                             </p>
                         </div>
 
@@ -270,7 +278,8 @@ class Pricing extends Component {
                     <div>
 
                         <div>
-                            <h3 className={classes.mainContentH3}>All pricing plans with free setup, pay-as-you-go, no long term
+                            <h3 className={classes.mainContentH3}>All pricing plans come 
+                            with free setup, pay-as-you-go, no long term
                             <br />contracts, & include the following features:</h3>
                             <div className={classes.grid4 + ' pricingGrid4'}>
                                 {this.renderGrid4()}

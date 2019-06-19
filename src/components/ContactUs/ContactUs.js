@@ -33,6 +33,8 @@ const styles = {
         backgroundColor: 'white',
         fontFamily: 'Barlow',
         backgroundImage: `url(${howItWorksPageBackground})`,
+        backgroundRepeat: 'no-repeat',
+                        backgroundSize: 'cover',
         paddingTop: '7em',
         paddingBottom: '7em'
     },
@@ -187,7 +189,10 @@ class ContactUs extends Component {
                     style={{
                         display: 'grid',
                         gridTemplateColumns: '15% 70% 15%',
-                        backgroundImage: `url('bg.png')`, color: 'white',
+                        backgroundImage: `url('bg.png')`, 
+                        backgroundRepeat: 'no-repeat',
+                        backgroundSize: 'cover',
+                        color: 'white',
                         paddingTop: '10em',
                         paddingBottom: '6em'
                     }}>

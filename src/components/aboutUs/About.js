@@ -27,35 +27,38 @@ const styles = {
     },
     grid3: {
         display: 'grid',
-        gridTemplateColumns: '15% 70% 15%',
+        gridTemplateColumns: '20% 60% 20%',
         backgroundColor: 'white',
         fontFamily: 'Barlow',
         backgroundImage: `url(${aboutUsBottomBackground})`,
+        backgroundRepeat: 'no-repeat',
+                        backgroundSize: 'cover',
         paddingTop: '7em',
         paddingBottom: '7em'
     },
     grid2: {
         display: 'grid',
-        gridTemplateColumns: '1fr 2.2fr',
-        gridGap: '20px'
+        gridTemplateColumns: '0.5fr 2.2fr',
+        gridGap: '70px'
     },
     grid2P: {
         fontSize: '2em',
         fontWeight: 600,
         color: '#11062f',
-
+        maxWidth: '150px',
         lineHeight: 1.25,
         letterSpacing: '-0.1px'
     },
     grid2Column: {
         display: 'grid',
-        gridTemplateColumns: '50% 50%',
+        gridTemplateColumns: '1fr 1fr',
         lineHeight: 1.63,
         color: '#655c7a',
-        gridGap: '3em'
+        gridGap: '3em',
+        paddingTop: '20px'
     },
     commentHeader: {
-        fontWeight: 500,
+        fontWeight: 600,
         lineHeight: 1.58,
         color: '#11062f'
     },
@@ -84,6 +87,8 @@ class About extends Component {
                         display: 'grid',
                         gridTemplateColumns: '15% 70% 15%',
                         backgroundImage: `url('bg.png')`, color: 'white',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundSize: 'cover',
                         paddingTop: '10em',
                         paddingBottom: '6em'
                     }}>
@@ -94,10 +99,11 @@ class About extends Component {
                                 <h2 className={classes.contentH2}>About us</h2>
                                 <div className={classes.line}></div>
                             </div>
-                            <p className={classes.contentP}>E-commerce fraud prevention is not just our business it's our obsession, that's how we're able
-                            <br />
-                                to give the highest approval ratings in the industry -
-                            <span className={classes.contentSpan}>93.5% approvals on average.</span>
+                            <p className={classes.contentP}>
+                                E-commerce fraud prevention is not just our business it's our obsession, that's how we're able
+                      
+                                to give approval ratings up to 98.5%
+                      
                             </p>
                         </div>
                     </div>
@@ -106,30 +112,26 @@ class About extends Component {
                 <div className={classes.grid3 + ' aboutPageGrid3'}>
                     <div></div>
                     <div className={classes.grid2 + ' aboutusGrid2'}>
-                        <div>
-                            <p className={classes.grid2P}>Maximize your revenue today <br/> and join ranks <br/>with our satisfied clients!</p>
+                        <div className="hideMobile">
+                            <p className={classes.grid2P}>Maximize your <span style={{color: '#3CDC7C'}}>revenue</span>  today</p>
+                            <div className={classes.line}></div>
                         </div>
                         <div>
                             <p className={classes.commentHeader}>
-                            We specialize in high volume B2B and B2C eCommerce merchants, brick and mortar 
-                            retailers with a CNP or MOTO (mail order/ telephone order) channel, amongst a wide array 
-                            of other industries. We service Credit Card Processors & IT Resellers. For resellers, we offer 
-                            discounted pricing and a customized reseller’s portal.</p>
+                            FraudFix, formerly eFraud Security, was founded over a decade ago. 
+                            Our primary focus is to offer a fully-automated verification service with pricing 
+                            roughly 30-40% lower than any in-house solution. 
+                            </p>
                             <div className={classes.grid2Column + ' aboutusGrid2'}>
                                 <div>
-                                    <p>At FraudFix, formerly eFraud Security, our primary focus is to offer a 
-                                        fully-automated verification service with pricing roughly 30-40% lower than any in-house solution – with a full i
-                                        nsurance guarantee! In fact, FraudFix is the pioneer of credit card verification with a guarantee and led the 
-                                        industry before competition arose. At rates as low as 5¢ per transaction and only a quarter percent for optional guarantee, 
-                                        FraudFix’s pricing is a no-brainer. 
-                                        Additionally, FraudFix does not charge any setup fees, monthly fees, or lock merchants into long-term contracts.</p>
+                                    <p>In fact, we were the pioneers of credit card verification services, and continue to lead the industry over 
+                            a decade later. With rates as low as 5¢ per transaction and only a quarter percent for our optional guarantee, 
+                            FraudFix’s pricing is a no-brainer. Additionally, FraudFix does not charge any setup fees, monthly fees, or 
+                            lock merchants into long-term contracts.</p>
                                 </div>
                                 <div>
-                                    <p>FraudFix offers a smooth, automated verification process. 
-                                        Not only does it offer high transaction approval rates, 
-                                        but it also accepts the risk – preventing 
-                                        fraudulent orders, increasing approval rates, and ultimately driving your 
-                                        company’s revenue forward. …Because more approvals mean more money!</p>
+                                    <p>We specialize in high volume B2B and B2C eCommerce merchants, brick and mortar retailers with a CNP or MOTO (mail order/ telephone order) 
+                                        channel, amongst a wide array of other industries. We service Credit Card Processors & IT Resellers.</p>
 
                                 </div>
                             </div>
