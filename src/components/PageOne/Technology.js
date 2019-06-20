@@ -207,15 +207,11 @@ class Technology extends Component {
             const theFunction = window.innerWidth > 722 ? this.handleDashboard : () => { };
             if (rowOne) {
                 if (item.id < 4) {
-                    const boldThree = item.id === 3 ? 'initial' : 'none';
-                    const theDisplay = item.id === 3 ? 'none' : 'initial';
-
                     return (
                         <div className={classes.divRow + ' innerDivRowTechnology'} key={item.id}
                             onClick={() => theFunction(item)}>
                             <div className={classes.imageSizerPurple + ' arrayOfTagsTechnology'}>
-                                <img src={image} alt="" className={classes.imageTag} style={{ display: theDisplay }} />
-                                <img src={green3} alt="" style={{ display: boldThree }} />
+                                <img src={image} alt="" className={classes.imageTag} />
                             </div>
                             <div className={classes.padding}>
                                 <p className={classes.divRowHeader}>{item.header}</p>

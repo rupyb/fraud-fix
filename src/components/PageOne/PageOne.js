@@ -4,7 +4,7 @@ import WelcomeFooter from './WelcomeFooter';
 import WhatWeDo from './WhatWeDo';
 import Technology from './Technology';
 import ApiInfo from './ApiInfo';
-import HowItWorks from './HowItWorks';
+// import HowItWorks from './HowItWorks';
 
 export default class PageOne extends Component {
  

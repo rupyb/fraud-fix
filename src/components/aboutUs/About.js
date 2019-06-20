@@ -100,9 +100,9 @@ class About extends Component {
                                 <div className={classes.line}></div>
                             </div>
                             <p className={classes.contentP}>
-                                E-commerce fraud prevention is not just our business it's our obsession, that's how we're able
-                      
-                                to give approval ratings up to 98.5%
+                                E-commerce fraud prevention is not just our business it's our obsession, 
+                                that's how we are able to approve up to 
+                      98.5%.
                       
                             </p>
                         </div>

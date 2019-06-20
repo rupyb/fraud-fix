@@ -156,7 +156,7 @@ class HowItWorks extends Component {
                             <img src={big4} alt="" className={classes.numberImage} />
                             <img src={pictogram4} alt="" className={classes.pictogram} />
                             <div></div>
-                            <p className={classes.smallP}>You gain the confidence to accept and reject orders, and maximize your profits with an approval rating of up to 98.5%</p>
+                            <p className={classes.smallP}>You gain the confidence to accept or reject orders, and maximize your profits with an approval rating of up to 98.5%</p>
                         </div>
                     </div>
                     <div></div>
