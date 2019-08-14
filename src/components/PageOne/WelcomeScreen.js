@@ -15,7 +15,7 @@ const styles = {
     },
     fontSize: {
         fontFamily: 'Barlow',
-        fontSize: '60px',
+        fontSize: '55px',
         lineHeight: 1.07,
         letterSpacing: '-0.1px',
         color: '#ffffff',

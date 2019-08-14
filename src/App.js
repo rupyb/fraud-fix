@@ -14,29 +14,28 @@ import BlogItem from './components/blog/BlogItem';
 import axios from 'axios';
 import './components/shared/mediaStyles.css';
 
-
 class App extends Component {
   state = {
     posts: []
   }
   componentDidMount() {
-    axios.get('https://api.buttercms.com/v2/posts/?auth_token=64abc35312a04f7560ac44f61cd671ab8704bf00').then(data => {
+    axios.get('https://9o09rv3rei.execute-api.us-east-1.amazonaws.com/dev/get-blogs').then(data => {
       this.setState({
-          posts: data.data.data
+        posts: data.data
       })
-  });
+    });
   }
 
   render() {
     return (
       <div style={{ fontSize: '17px', fontFamily: 'Barlow', lineHeight: 1, color: '#11062F' }}>
-        <Navbar {...this.props}/>
+        <Navbar {...this.props} />
         <ScrollToTop />
         <Switch>
           <Route exact path="/" component={PageOne} />
           <Route path="/about" component={About} />
           <Route path="/pricing" component={Pricing} />
-          <Route path="/blog" render={(props) => <Blog {...props} posts={this.state.posts}/> } />
+          <Route path="/blog" render={(props) => <Blog {...props} posts={this.state.posts} />} />
           <Route path="/howitworks" component={HowItWorks} />
           <Route path="/contact" component={ContactUs} />
           <Route path="/submission" component={ReceivedContact} />

@@ -5,6 +5,7 @@ import blogPostBackground from '../../assets/illustration/blogPostBackground.png
 import dateLogo from '../../assets/illustration/blogImages/date.svg';
 import Search from './Search';
 import MostPopular from './MostPopular';
+import striptags from 'striptags';
 
 const styles = {
     content: {
@@ -95,6 +96,7 @@ const styles = {
         display: 'grid',
         gridTemplateColumns: '50% 43% 7%',
         gridTemplateRows: '1fr 0.4fr 0.7fr',
+        
     },
     gridForOverlapSmall: {
         display: 'grid',
@@ -103,7 +105,8 @@ const styles = {
     },
     imageDiv: {
         gridRow: '1 / 3',
-        gridColumn: '1 / 4'
+        gridColumn: '1 / 4',
+        cursor : 'pointer'
     },
     messageDiv: {
         gridRow: '2 / 4',
@@ -114,7 +117,8 @@ const styles = {
         gridTemplateColumns: '5% 75% 20%',
         marginBottom: '10px',
         backgroundColor: 'white',
-        height: '260px'
+        height: '260px',
+        cursor : 'pointer'
     },
     smallPicture: {
         fontSize: '24px'
@@ -146,16 +150,16 @@ class Blog extends Component {
         if (this.props.posts !== prevProps.posts) {
             this.setState({
                 originalPosts: this.props.posts,
-                posts: this.props.posts.sort((a, b) => new Date(a.created).getTime() - new Date(b.created).getTime()).slice(0, 5),
-                mostPopular: this.props.posts.sort((a, b) => new Date(a.created).getTime() - new Date(b.created).getTime()).slice(0, 5)
+                posts: this.props.posts.sort((a, b) => new Date(a.fields['Publish Date']).getTime() - new Date(b.fields['Publish Date']).getTime()).slice(0, 5),
+                mostPopular: this.props.posts.sort((a, b) => new Date(a.fields['Publish Date']).getTime() - new Date(b.fields['Publish Date']).getTime()).slice(0, 5)
             });
         }
     }
     componentDidMount() {
         this.setState({
             originalPosts: this.props.posts,
-            posts: this.props.posts.sort((a, b) => new Date(a.created).getTime() - new Date(b.created).getTime()).slice(0, 5),
-            mostPopular: this.props.posts.sort((a, b) => new Date(a.created).getTime() - new Date(b.created).getTime()).slice(0, 5)
+            posts: this.props.posts.sort((a, b) => new Date(a.fields['Publish Date']).getTime() - new Date(b.fields['Publish Date']).getTime()).slice(0, 5),
+            mostPopular: this.props.posts.sort((a, b) => new Date(a.fields['Publish Date']).getTime() - new Date(b.fields['Publish Date']).getTime()).slice(0, 5)
         })
     }
 
@@ -169,6 +173,7 @@ class Blog extends Component {
         return (
             <div className={classes.halfSize}>
                 {this.state.posts.map((post, index) => {
+                    let postMessage = `${striptags(post.fields.Post).split(' ').slice(0,10).join(' ')} ...`;
                     let classSpan = index === 0 ? classes.spanTwo : '';
                     let gridForOverlap = index === 0 ? classes.gridForOverlapLarge : classes.gridForOverlapSmall;
                     let fontMessage = index === 0 ? classes.bigPicture : classes.smallPicture;
@@ -185,17 +190,18 @@ class Blog extends Component {
                         <div className={classSpan} key={index} onClick={() => this.handleClick(this.state.posts.indexOf(post) + 1)}>
                             <div className={gridForOverlap + mediaClass}>
                                 <div className={classes.imageDiv}>
-                                    <img src={post.featured_image} alt="" className={classes.image} />
+                                    <img src={post.fields.Image[0].url} alt="" className={classes.image} />
                                 </div>
-                                <div className={classes.messageDiv}>
+                                <div className={classes.messageDiv +  ' blogMessageDiv'}>
                                     <div></div>
                                     <div>
                                         <div className={classes.dateImage + ' ' + smallPicDate + ' dateImageDiv'}>
                                             <img src={dateLogo} alt="" className={classes.image + ' ' + classes.datePic} />
-                                            <p className={classes.datePic}>{this.renderDate(post.published)}</p>
+                                            <p className={classes.datePic}>{this.renderDate(post.fields['Publish Date'])}</p>
                                             <div></div>
                                         </div>
-                                        <p className={classes.messageP + ' blogMessageP ' + fontMessage}>{post.title}</p>
+                                        <p className={classes.messageP + ' blogMessageP ' + fontMessage}>{post.fields['SEO Title']}</p>
+                                        <p className={'postInMessageDiv'}>{postMessage}</p>
                                     </div>
                                     <div></div>
                                 </div>
@@ -215,7 +221,7 @@ class Blog extends Component {
         const newArray = this.state.originalPosts;
         this.setState({
             loadMore: this.state.loadMore + 2,
-            posts: newArray.sort((a, b) => new Date(a.created).getTime() - new Date(b.created).getTime()).slice(0, 5 + this.state.loadMore)
+            posts: newArray.sort((a, b) => new Date(a.fields['Publish Date']).getTime() - new Date(b.fields['Publish Date']).getTime()).slice(0, 5 + this.state.loadMore)
         });
 
     }
@@ -262,6 +268,7 @@ class Blog extends Component {
                                 data={this.state.mostPopular}
                                 dateLogo={dateLogo}
                                 renderDate={this.renderDate}
+                                history={this.props.history}
                             />
                         </div>
                     </div>

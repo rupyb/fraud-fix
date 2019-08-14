@@ -263,7 +263,7 @@ class Technology extends Component {
                                 <img src={hover4} alt="" />
                                 <img src={hover5} alt="" />
                             </div>
-                            <h3 className={classes.h3}>Technology</h3>
+                            <h3 className={classes.h3 + ' technologyH3'}>Technology</h3>
                             <div className={classes.line}></div>
                             <p className={classes.firstP + ' pageOneTechnologyP'}>
                                 Our advanced AI algorithms and machine learning create and improve custom fraud

@@ -48,7 +48,7 @@ class Search extends Component {
     }
 
     performSearch = () => {
-        this.props.renderSearch(this.props.posts.filter(item => item.title.toLowerCase().includes(this.state.search)));
+        this.props.renderSearch(this.props.posts.filter(item => item.fields['SEO Title'].toLowerCase().includes(this.state.search)));
     }
     render() {
         const { classes } = this.props;

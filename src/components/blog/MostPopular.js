@@ -3,7 +3,8 @@ import { withStyles } from '@material-ui/styles';
 
 const styles = {
     postDiv: {
-        borderTop: '0.5px solid rgba(219, 214, 233, 0.5)'
+        borderTop: '0.5px solid rgba(219, 214, 233, 0.5)',
+        cursor: 'pointer'
     },
     content: {
         paddingBottom: '25px'
@@ -27,16 +28,20 @@ const styles = {
 
 class MostPopular extends Component {
 
+    handleClick = id => {
+        this.props.history.push(`/blogs/${id}`);
+    }
+
     renderPosts = () => {
         const { classes } = this.props;
-
+        
         return this.props.data.map((post, index) => {
             return (
-                <div key={index} className={classes.postDiv}>
-                    <p className={classes.postTitle}>{post.title}</p>
+                <div key={index} className={classes.postDiv} onClick={() => this.handleClick(this.props.data.indexOf(post) + 1)}>
+                    <p className={classes.postTitle}>{post.fields['SEO Title']}</p>
                     <div className={classes.content}>
                         <img src={this.props.dateLogo} alt="" />
-                        <p className={classes.p}>{this.props.renderDate(post.published)}</p>
+                        <p className={classes.p}>{this.props.renderDate(post.fields['Publish Date'])}</p>
                     </div>
                 </div>
             )
@@ -45,7 +50,6 @@ class MostPopular extends Component {
 
     render() {
         const { classes } = this.props;
-
         return (
             <div className={classes.popularDiv}>
                 <p className={classes.header}>Most popular</p>

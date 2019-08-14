@@ -187,17 +187,17 @@ class BlogItem extends Component {
                 <div key={index} onClick={() => this.handleClick(this.state.posts.indexOf(post) + 1)}>
                     <div className={classes.gridOverlap + ' blogItemPageGrid'}>
                         <div className={classes.imageOverlap}>
-                            <img src={post.featured_image} alt="" className={classes.image + ' blogItemImage'} />
+                            <img src={post.fields.Image[0].url} alt="" className={classes.image + ' blogItemImage'} />
                         </div>
                         <div className={classes.messageDivOuterDiv + ' messageDivOuterDiv'}>
                             <div className={classes.messageDiv + ' blogItemMessageDiv'}>
                                 <div className={classes.smallPic}>
 
                                     <img src={dateLogo} alt="" />
-                                    <span className={classes.datePic}>{this.renderDate(post.published)}</span>
+                                    <span className={classes.datePic}>{this.renderDate(post.fields['Publish Date'])}</span>
 
 
-                                    <p className={classes.messageP}>{post.title}</p>
+                                    <p className={classes.messageP}>{post.fields['SEO Title']}</p>
                                 </div>
                             </div>
                         </div>
@@ -245,16 +245,16 @@ class BlogItem extends Component {
                         <div></div>
                         <div>
                             <div className={classes.mainPost}>
-                                <img src={this.state.post[0].featured_image} alt="" className={classes.image} />
+                                <img src={this.state.post[0].fields.Image[0].url} alt="" className={classes.image} />
                                 <div className={classes.postDetails}>
                                     <div className={classes.dateDiv}>
                                         <img src={dateLogo} alt="" />
-                                        <span className={classes.datePic}>{this.renderDate(this.state.post[0].published)}</span>
+                                        <span className={classes.datePic}>{this.renderDate(this.state.post[0].fields['Publish Date'])}</span>
                                     </div>
-                                    <p className={classes.title}>{this.state.post[0].title}</p>
+                                    <p className={classes.title}>{this.state.post[0].fields['SEO Title']}</p>
                                     <div className={classes.smallLine}></div>
                                     <div className={classes.postBody}
-                                        dangerouslySetInnerHTML={{ __html: this.state.post[0].body }}></div>
+                                        dangerouslySetInnerHTML={{ __html: this.state.post[0].fields.Post }}></div>
                                 </div>
                             </div>
                             <div>

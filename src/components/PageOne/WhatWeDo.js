@@ -117,18 +117,18 @@ class WhatWeDo extends Component {
     const { classes } = this.props;
     return (
         <div>
-            <div className={classes.div}>
+            <div className={classes.div + ' whatWeDoDiv'}>
                 <div></div>
                 <div >
                     <div className={classes.centerDiv}>
-                        <p className={classes.p}>What we do</p>
+                        <p className={classes.p + ' whatWeDoP'}>What we do</p>
                         <div className={classes.smallLine}></div>
                     </div>
                     <div className={classes.mobileArrayDiv + ' mobileArrayDiv'}>
                         {infoArray.map(item => (
                             <div key={item.title}>
                                 <div className={classes.centerImage}>
-                                    <img src={item.image} alt=""/>
+                                    <img src={item.image} alt="" className={'whatWeDoBigImage'}/>
                                 </div>
                                 <div className={classes.centerImage}>
                                     <img src={item.circle} alt=""/>

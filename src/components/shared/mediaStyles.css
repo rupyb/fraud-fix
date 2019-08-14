@@ -21,7 +21,11 @@
     }
 }
 
-
+@media only screen and (max-width: 1523px) {
+   .blogMessageDiv {
+       height: 275px !important;
+   }
+}
 
 @media only screen and (max-width: 1500px) {
     .pageOneApiInfo {
@@ -43,6 +47,16 @@
     }
 
 }
+
+@media only screen and (max-width: 1461px) {
+    .blogMessageDiv {
+        height: 290px !important;
+    }
+
+    .postInMessageDiv {
+        font-size: 15px
+    }
+ }
 
 @media only screen and (max-width: 1415px) {
     .blogItemImage {
@@ -113,6 +127,12 @@
     .blogItemPageGrid {
         grid-template-rows: 0.7fr .3fr 0.3fr !important;
         grid-template-columns: 40% 40% 20% !important;
+    }
+}
+
+@media only screen and (max-width: 1286px) {
+    .blogMessageP {
+        padding-bottom: 0 !important;
     }
 }
 
@@ -193,6 +213,10 @@
     .outerDivTechnology {
         padding-top: 175px !important;
     }
+
+    .gridForOverlapSmall .postInMessageDiv {
+        font-size: 14px
+    }
   }
 
   @media only screen and (max-width: 1135px) {
@@ -220,6 +244,15 @@
             width: 70% !important;
         }
        
+        /* .gridForOverlapSmall .postInMessageDiv {
+            display: none;
+        }
+
+        } */
+
+        .gridForOverlapSmall .blogMessageP {
+            font-size: 21px !important;
+        }
   }
 
   @media only screen and (max-width: 1135px) {
@@ -234,11 +267,20 @@
         .aboutPageGrid3 {
             grid-template-columns: 8% 84% 8% !important;
         }    
+
+        .gridForOverlapSmall .blogMessageP {
+            font-size: 18px !important;
+        }
   }
 
   @media only screen and (max-width: 1030px) {
     .pageOneMainDiv {
         grid-template-columns: 5% 90% 5% !important;
+    }
+
+    .gridForOverlapLarge .blogMessageDiv {
+        height: 295px !important;
+        padding-bottom: 20px !important;
     }
   }
 
@@ -288,6 +330,12 @@
        height: 230px !important;
     }
    
+    .gridForOverlapSmall .blogMessageDiv {
+        height: 306px !important;
+    }
+
+    
+
   }
 
   @media only screen and (max-width: 946px) {
@@ -299,7 +347,28 @@
         grid-template-rows: 0.6fr .5fr 0.3fr !important;
         grid-template-columns: 35% 35% 30% !important;
     }
+
+    .gridForOverlapSmall .blogMessageP {
+        font-size: 20px !important;
+    }
+
+    .dateImageDiv {
+        grid-template-columns: 7% 59% 33% !important;
+        padding-top: 0 !important;
+       }
 }
+
+  
+
+  @media only screen and (max-width: 918px) {
+    .gridMaster {
+        grid-template-columns: 1fr 0.7fr !important;
+    }
+
+    .gridForOverlapLarge .blogMessageP {
+        font-size: 25px !important;
+    }
+  }
 
   @media only screen and (max-width: 888px) {
     .gridMaster {
@@ -341,6 +410,7 @@
 
     .dateImageDiv {
         grid-template-columns: 7% 59% 33% !important;
+        padding-top: 0;
        }
 
        .mainDivTechnology {
@@ -348,11 +418,6 @@
     }
   }
 
-  @media only screen and (max-width: 918px) {
-    .gridMaster {
-        grid-template-columns: 1fr 0.7fr !important;
-    }
-  }
   @media only screen and (max-width: 848px) {
       .navbarUl {
         font-size: 15px !important;
@@ -487,6 +552,10 @@
   @media only screen and (max-width: 786px) {
     .gridMaster {
         grid-template-columns: 1fr 0.6fr !important;
+    }
+
+    .gridForOverlapSmall .blogMessageP {
+        font-size: 18px !important;
     }
   }
   @media only screen and (max-width: 774px) {
@@ -741,6 +810,16 @@
     .gridForOverlapSmall {
         grid-template-rows: 1fr 1.3fr 1fr !important;
     }
+    .gridForOverlapLarge .blogMessageDiv {
+        height: 225px !important;
+    }
+    .gridForOverlapSmall .postInMessageDiv {
+        display: initial;
+    }
+    .dateImageDiv {
+      
+        padding-top: 20px !important;
+    }
   }  
 
   @media only screen and (max-width: 690px) { 
@@ -821,6 +900,14 @@
     }
    }
 
+
+   @media only screen and (max-width: 496px) { 
+    
+    .gridForOverlapSmall .blogMessageP {
+     font-size: 18px !important;
+    }
+   }
+   
    @media only screen and (max-width: 460px) { 
     .mainDivTechnology {
         margin-top: -353px !important;
@@ -879,6 +966,10 @@
     .navbar-grid {
         display: inline !important;
     } */
+
+    .gridForOverlapLarge .blogMessageP {
+        font-size: 21px !important;
+    }
    }
 
    @media only screen and (max-width: 388px) { 
@@ -894,6 +985,8 @@
     .messageDivOuterDiv {
         right: -29% !important;
     }
+
+
    }  
 
    @media only screen and (max-width: 355px) { 
@@ -920,3 +1013,33 @@
         width: 75%;
     }
    }  
+
+   @media only screen and (max-width: 300px) { 
+    .carousel.carousel-slider {
+        width: 90% !important;
+    }
+
+    .whatWeDoBigImage {
+        width: 90% !important;
+    }
+
+    .whatWeDoP {
+        font-size: 40px !important;
+    }
+
+    .whatWeDoDiv {
+        grid-template-columns: 8% 84% 8% !important;
+    }
+
+    .technologyH3 {
+        font-size: 40px !important;
+    }
+
+    .welcomeHeader {
+        font-size: 34px !important;
+    }
+
+    .MuiDrawer-root .MuiPaper-root{
+        width: 70%;
+    }
+   } 
